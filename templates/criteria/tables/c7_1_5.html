@@ -1,0 +1,65 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> SOLID /LIQUID / E-WASTE MANAGEMENT </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Measure Taken </td>
+                            <td> {{obj.text2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of Implementation </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Method of processing </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Initial Investment </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Working Expense </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Working Expense excluding salary </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Impact </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

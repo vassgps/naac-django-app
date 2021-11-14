@@ -1,0 +1,65 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Program </td>
+                            <td> {{obj.program }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Semester </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Complaints Registered </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Nature of complaint </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Grievances addressed </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Time taken to redressed the issue </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Outcome </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

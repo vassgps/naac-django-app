@@ -1,0 +1,70 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> 5.2.2 </td>
+                            <td> {{obj.cid }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Programme </td>
+                            <td> {{obj.program }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the student </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> (UG to PG / PG TO M.Phil  / M.Phil to Ph.D / PG to P.hD / Ph.D to Post Doctoral) </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Program Joined </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the institution joined </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Address & Contact details of institution joined </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Document No </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

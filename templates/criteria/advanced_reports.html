@@ -1,0 +1,143 @@
+{% extends 'adminapp/base.html' %} {% load static %}
+{% load widget_tweaks %}
+{% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+<!-- Main Content -->
+
+
+      {% if messages %}
+        <div class="alert  alert-light alert-dismissible fade show" role="alert">
+        {% for message in messages %}
+        {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} {{ message }} </span>
+        {% endfor %}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+       </div>
+       {% endif %}
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card mb-0">
+				<div class="card-header">
+					<h4 class="card-title mb-0"> Criteria {{cr_data.criteria}}</h4>
+					<p class="card-text">
+						This Page is limited to Admin only for Report Generation (Both Activated and Pending)
+                        <h4> {{cr_data.criteria}}: {{cr_data.final_title}}</h4>
+					</p>
+
+				</div>
+                <div class="col-sm-10">
+                    <br>
+                    <h4 class="card-title mb-0">Report Generation</h4>
+					<p class="card-text">
+						This is the space for Generate PDF, excel & CSV Reports with Filtration
+					</p>
+                </div>
+
+                <br>
+
+    <div style="width:1280px; margin:0 auto;">
+            <div class="col-sm-6">
+                 <h4 class="card-title mb-0">Report Data </h4>
+                <br>
+              <div class="card mb-0">
+                  <div class="card-body">
+                        <div class='col-md-12 '>
+                               <form  method="post" id="C1_1_1SearchForm"  enctype="multipart/form-data"
+                                target="_blank" >
+                                   <div class="form-group">
+                                          {% csrf_token %}
+                                               <div class="container">
+                                                <div class="row">
+                                                    {% for field in form  %}
+                                                      <div class="col-sm-4 pb-2">
+                                                        <b>{{ field.label_tag }}</b> - {{ field }}
+                                                      </div>
+                                                    {% endfor %}
+                                                </div>
+                                                    <div class="row"><div class="col-sm-6">
+                                               <label>From :</label>
+                                                  <input  type="date" class="form-control" id="fdate" name="fdate">
+
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <label>To :</label>
+                                           <input  type="date" class="form-control" id="tdate" name="tdate">
+                                       </div></div>
+
+                                                   <div class="row">
+                                                       <div class="col-sm-6 pt-3">
+                                                           <label>Select Report Type :</label>
+                                        <select style="width: 180px;" name="type" required class="form-control">
+                                             <option value="msx">MS-Excel Data report</option>
+                                              <option value="csv">CSV Data report </option>
+                                            <option value="txtmedia"> Images with Text</option>
+                                            <option value="notxt"> Images without-text </option>
+                                            <option value="spdf"> Join all PDF </option>
+<!--                                             <option value="pdf"> PDF Data report </option>-->
+                                        </select>
+                                                       </div>
+                                                       <div class="col-sm-4" style="margin-left:auto; align-self: flex-end; text-align: right;">
+                                                           <button type="submit" class="btn btn-primary">Submit</button>
+                                                       </div>
+                                                   </div>
+                                              </div>
+
+
+
+                                   </div>
+                               </form>
+                        </div>
+                  </div>
+              </div>
+            </div>
+       <br>
+    </div>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+
+
+
+<script>
+    $("#id_program").change(function () {
+        const url = $("#C1_1_1SearcForm").attr("data-subject-url");  // get the url of the `load_subject` view
+        const programId = $(this).val();  // get the selected program ID from the HTML input
+
+        $.ajax({                       // initialize an AJAX request
+            url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+            data: {
+                'program_id': programId       // add the Program id to the GET parameters
+            },
+            success: function (data) {   // `data` is the return of the `load_subject` view function
+                $("#id_paper").html(data);  // replace the contents of the subject input with the data that came from the server
+                /*
+
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (subject) {
+                    html_data += `<option value="${paper.id}">${paper.name}</option>`
+                });
+                console.log(html_data);
+                $("#id_paper").html(html_data);
+
+                */
+            }
+        });
+
+    });
+    </script>
+  </div>
+<!-- End Main content-->
+
+{% endblock %}
+
+        </div>
+    </div>

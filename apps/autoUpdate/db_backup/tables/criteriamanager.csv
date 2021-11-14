@@ -1,0 +1,154 @@
+id,criteria,ADMIN,STAFF,NAAC_COD,DEPT_COD,TEACHER,CLUB,OTHER,assigned_clubs,ordering,cr_index,is_active,is_enabled
+2,c1_1_2,f,f,t,f,f,t,f,"{'"MINUTES_BOOK'": '"True'"}",102,1,t,t
+3,c1_1_3,f,f,t,t,f,f,f,{},103,1,t,t
+4,c1_2_1,f,f,t,f,f,t,f,"{'"MINUTES_BOOK'": '"True'"}",121,1,t,t
+5,c1_2_2,f,f,t,f,f,f,f,{},122,1,t,t
+6,c1_3_1,f,f,t,t,f,f,f,{},131,1,t,t
+7,c1_3_2,f,f,t,f,f,t,f,"{'"DIRECTOR'": '"True'", '"MINUTES_BOOK'": '"True'"}",132,1,t,t
+8,c1_3_3,f,f,f,t,f,f,f,{},133,1,t,t
+9,c1_3_4,f,f,f,t,f,f,f,{},134,1,t,t
+10,c1_4_1,f,f,t,f,f,f,f,{},141,1,t,t
+11,c1_4_2,f,f,t,f,f,f,f,{},142,1,t,t
+12,c2_1_1,f,f,t,f,f,t,f,"{'"SOFTWARE'": '"True'"}",211,2,t,t
+13,c2_1_2,f,f,t,f,f,t,f,"{'"SOFTWARE'": '"True'"}",212,2,t,t
+14,c2_1_3,f,f,t,f,f,t,f,"{'"SOFTWARE'": '"True'"}",213,2,t,t
+15,c2_2_1,f,f,t,f,t,f,f,{},221,2,t,t
+16,c2_2_2,f,f,t,f,f,t,f,"{'"SOFTWARE'": '"True'"}",222,2,t,t
+17,c2_2_3,f,f,t,t,f,t,f,"{'"SOFTWARE'": '"True'"}",223,2,t,t
+18,c2_3_1,f,f,f,t,t,f,f,{},231,2,t,t
+19,c2_3_2,f,f,f,t,t,f,f,{},232,2,t,t
+20,c2_3_3,f,f,f,t,f,f,f,{},233,2,t,t
+21,c2_3_4,f,f,t,f,f,t,f,"{'"COE'": '"True'"}",234,2,t,t
+22,c2_4_1,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'"}",241,2,t,t
+23,c2_4_2,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'"}",242,2,t,t
+24,c2_4_3,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'"}",243,2,t,t
+25,c2_4_4,f,f,t,t,t,f,f,{},244,2,t,t
+26,c2_4_5,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'"}",245,2,t,t
+27,c2_5_1,f,f,f,f,f,t,f,"{'"COE'": '"True'", '"SOFTWARE'": '"True'"}",251,2,t,t
+28,c2_5_2,f,f,f,f,f,t,f,"{'"COE'": '"True'"}",252,2,t,t
+29,c2_5_3,f,f,f,f,f,t,f,"{'"COE'": '"True'"}",253,2,t,t
+30,c2_5_4,f,f,f,f,f,t,f,"{'"COE'": '"True'"}",254,2,t,t
+31,c2_5_5,f,f,f,f,f,t,f,"{'"COE'": '"True'"}",255,2,t,t
+32,c2_6_1,f,f,t,f,f,f,f,{},261,2,t,t
+33,c2_6_2,f,f,t,f,f,f,f,{},262,2,t,t
+34,c2_6_3,f,f,f,f,f,t,f,"{'"COE'": '"True'"}",263,2,t,t
+35,c2_7_1,f,f,t,f,f,f,f,{},271,2,t,t
+36,c3_1_1,f,f,t,f,f,t,f,"{'"PRINCIPALE'": '"True'", '"MINUTES_BOOK'": '"True'"}",311,3,t,t
+37,c3_1_2,f,f,f,f,f,t,f,"{'"ADMINISTRATOR'": '"True'"}",312,3,t,t
+38,c3_1_3,f,f,t,t,t,f,f,{},313,3,t,t
+39,c3_1_4,f,f,f,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",314,3,t,t
+40,c3_2_1,f,f,t,t,t,f,f,{},321,3,t,t
+41,c3_2_2,f,f,t,f,f,f,f,{},322,3,t,t
+42,c3_2_3,f,f,f,t,f,f,f,{},323,3,t,t
+43,c3_2_4,f,f,f,f,f,f,f,{},324,3,t,f
+44,c3_3_1,f,f,f,f,f,t,f,"{'"DIRECTOR'": '"True'"}",331,3,t,t
+45,c3_3_2,f,f,t,t,f,f,f,{},332,3,t,t
+46,c3_3_3,f,f,f,t,t,t,f,"{'"RESEARCH'": '"True'"}",333,3,t,t
+47,c3_4_1,f,f,t,f,f,t,f,"{'"LIBRARY'": '"True'"}",341,3,t,t
+48,c3_4_2,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'"}",342,3,t,t
+49,c3_4_3,f,f,f,t,t,f,f,{},343,3,t,t
+50,c3_4_4,f,f,f,t,t,t,f,"{'"RESEARCH'": '"True'"}",344,3,t,t
+51,c3_4_5,f,f,f,t,f,f,f,{},345,3,t,t
+52,c3_4_6,f,f,f,t,t,f,f,{},346,3,t,t
+53,c3_4_7,f,f,f,t,f,f,f,{},347,3,t,t
+54,c3_4_8,f,f,f,f,f,f,f,{},348,3,t,t
+55,c3_5_1,f,f,f,t,t,f,f,{},351,3,t,t
+56,c3_5_2,f,f,f,t,t,f,f,{},352,3,t,t
+57,c3_5_3,f,f,f,t,f,f,f,{},353,3,t,t
+58,c3_6_1,f,f,f,t,t,t,f,"{'"NCC'": '"True'", '"NSS'": '"True'"}",361,3,t,t
+59,c3_6_2,f,f,f,t,f,t,f,"{'"FORUMS'": '"True'"}",362,3,t,t
+60,c3_6_3,f,f,f,t,f,t,f,"{'"NCC'": '"True'", '"NSS'": '"True'"}",363,3,t,t
+61,c3_6_4,f,f,f,t,f,t,f,"{'"FORUMS'": '"True'"}",364,3,t,t
+62,c3_7_1,f,f,f,t,f,f,f,{},371,3,t,t
+63,c3_7_2,f,f,f,t,f,f,f,{},372,3,t,t
+64,c3_7_3,f,f,f,t,f,t,f,"{'"DIRECTOR'": '"True'", '"ADMINISTRATOR'": '"True'"}",373,3,t,t
+65,c4_1_1,f,f,f,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",411,4,t,t
+66,c4_1_2,f,f,f,f,f,f,f,{},412,4,t,f
+67,c4_1_2A,f,f,f,t,f,t,f,{},412.1,4,t,t
+68,c4_1_2B,f,f,f,f,f,t,f,{},412.2,4,t,t
+69,c4_1_2C,f,f,f,f,f,t,f,{},412.3,4,t,t
+70,c4_1_2D,f,f,f,f,f,t,f,{},412.4,4,t,t
+71,c4_1_2E,f,f,f,f,f,t,f,{},412.5,4,t,t
+72,c4_1_3,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",413,4,t,t
+73,c4_1_4,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",414,4,t,t
+74,c4_2_1,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'", '"ADMINISTRATOR'": '"True'"}",421,4,t,t
+75,c4_2_2,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'"}",422,4,t,t
+76,c4_2_3,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'"}",423,4,t,t
+77,c4_2_4,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'"}",424,4,t,t
+78,c4_2_5,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'"}",425,4,t,t
+79,c4_2_6,f,f,f,f,f,t,f,"{'"LIBRARY'": '"True'"}",426,4,t,t
+80,c4_3_1,f,f,f,f,f,t,f,"{'"DIRECTOR'": '"True'"}",431,4,t,t
+81,c4_3_2,f,f,f,f,f,t,f,"{'"DIRECTOR'": '"True'"}",433,4,t,t
+82,c4_3_3,f,f,f,f,f,t,f,"{'"DIRECTOR'": '"True'"}",433,4,t,t
+83,c4_3_4,f,f,f,f,f,t,f,"{'"DIRECTOR'": '"True'"}",434,4,t,t
+84,c4_4_1,f,f,f,f,f,t,f,"{'"ADMINISTRATOR'": '"True'"}",441,4,t,t
+85,c4_4_2,f,f,f,f,f,t,f,"{'"ADMINISTRATOR'": '"True'"}",442,4,t,t
+86,c5_1_1,f,f,t,f,f,f,f,{},511,5,t,t
+87,c5_1_2,f,f,t,f,f,f,f,{},512,5,t,t
+88,c5_1_3,f,f,t,t,f,f,f,{},513,5,t,f
+89,c5_1_3A,f,f,t,t,f,f,f,{},513.1,5,t,t
+90,c5_1_3B,f,f,t,t,f,f,f,{},513.2,5,t,t
+91,c5_1_3C,f,f,t,t,f,f,f,{},513.3,5,t,t
+92,c5_1_3D,f,f,t,t,f,f,f,{},513.4,5,t,t
+93,c5_1_3E,f,f,t,t,f,f,f,{},513.5,5,t,t
+94,c5_1_3F,f,f,t,t,f,f,f,{},513.6,5,t,t
+95,c5_1_3G,f,f,t,t,f,f,f,{},513.7,5,t,t
+96,c5_1_3H,f,f,t,t,f,f,f,{},513.8,5,t,t
+97,c5_1_4,f,f,f,t,f,f,f,"{'"CURRIER_GUIDENCE'": '"True'"}",514,5,t,t
+98,c5_1_5,f,f,t,t,f,f,f,{},515,5,t,t
+99,c5_1_6,f,f,f,t,f,t,f,"{'"CELL'": '"True'"}",516,5,t,t
+100,c5_2_1,f,f,f,t,f,t,f,"{'"PLACEMENT'": '"True'"}",521,5,t,t
+101,c5_2_2,f,f,f,t,f,f,f,{},522,5,t,t
+102,c5_2_3,f,f,f,f,f,f,f,{},523,5,t,t
+103,c5_3_1,f,f,f,t,f,t,f,"{'"BZONE'": '"True'"}",531,5,t,t
+104,c5_3_2,f,f,f,f,f,f,f,{},532,5,t,t
+105,c5_3_2A,f,f,t,f,f,t,f,"{'"FORUMS'": '"True'", '"STUDENT_ADVISOR'": '"True'"}",532.1,5,t,t
+106,c5_3_2B,f,f,t,f,f,t,f,"{'"FORUMS'": '"True'", '"STUDENT_ADVISOR'": '"True'"}",532.2,5,t,t
+107,c5_3_3,f,f,f,t,f,t,f,"{'"BZONE'": '"True'", '"FORUMS'": '"True'"}",533,5,t,t
+108,c5_4_1A,f,f,f,t,f,t,f,"{'"ALUMNI'": '"True'"}",541.1,5,t,t
+109,c5_4_2,f,f,f,t,f,f,f,"{'"ALUMNI'": '"True'"}",542,5,t,t
+110,c6_1_1,f,f,t,f,f,f,f,{},611,6,t,t
+111,c6_1_2,f,f,t,f,f,f,f,{},612,6,t,t
+112,c6_2_1,f,f,f,t,f,f,f,{},621,6,t,t
+113,c6_2_2,f,f,t,f,f,f,f,{},622,6,t,t
+114,c6_2_3,f,f,t,f,f,f,f,{},623,6,t,t
+115,c6_2_4,f,f,t,f,f,f,f,{},624,6,t,t
+116,c6_3_1,f,f,t,f,f,f,f,{},631,6,t,t
+117,c6_3_2,f,f,f,t,t,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",632,6,t,t
+118,c6_3_3,f,f,t,f,f,f,f,{},633,6,t,t
+119,c6_3_4,f,f,f,t,t,f,f,{},634,6,t,t
+120,c6_3_5,f,f,t,f,f,f,f,{},635,6,t,t
+121,c6_4_1,f,f,t,f,f,f,f,{},641,6,t,t
+122,c6_4_2,f,f,t,f,f,f,f,{},642,6,t,t
+123,c6_4_3,f,f,t,f,f,f,f,{},643,6,t,t
+124,c6_5_1,f,f,t,f,f,f,f,{},651,6,t,t
+125,c6_5_2,f,f,t,f,f,f,f,{},652,6,t,t
+126,c6_5_3,f,f,t,f,f,f,f,{},653,6,t,t
+127,c6_5_4,f,f,t,f,f,f,f,{},654,6,t,t
+128,c6_5_5,f,f,t,f,f,f,f,{},655,6,t,t
+129,c7_1_1,f,f,t,t,f,t,f,"{'"WOMENS'": '"True'"}",711,7,t,t
+130,c7_1_2,f,f,t,t,f,f,f,"{'"SEXUAL_GRIVENCE'": '"True'"}",712,7,t,f
+131,c7_1_2A,f,f,t,t,f,t,f,"{'"SEXUAL_GRIVENCE'": '"True'"}",712.1,7,t,t
+132,c7_1_2B,f,f,t,t,f,t,f,"{'"SEXUAL_GRIVENCE'": '"True'"}",712.2,7,t,t
+133,c7_1_2C,f,f,t,t,f,t,f,"{'"SEXUAL_GRIVENCE'": '"True'"}",712.3,7,t,t
+134,c7_1_3,f,f,t,f,f,f,f,{},713,7,t,t
+135,c7_1_4,f,f,t,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",714,7,t,t
+136,c7_1_5,f,f,t,f,f,t,f,"{'"NCC'": '"True'", '"NSS'": '"True'", '"ADMINISTRATOR'": '"True'"}",715,7,t,t
+137,c7_1_6,f,f,t,f,f,t,f,"{'"ADMINISTRATOR'": '"True'"}",716,7,t,t
+138,c7_1_7,f,f,t,f,f,t,f,"{'"NSS'": '"True'"}",717,7,t,t
+139,c7_1_8,f,f,f,f,f,f,f,{},718,7,t,t
+140,c7_1_9,f,f,f,f,f,t,f,"{'"OFFICE'": '"True'", '"ADMINISTRATOR'": '"True'"}",719,7,t,t
+141,c7_1_10,f,f,t,f,f,f,f,{},720,7,t,t
+142,c7_1_11,f,f,t,f,f,t,f,"{'"MSW'": '"True'", '"NCC'": '"True'", '"NSS'": '"True'"}",721,7,t,t
+143,c7_1_12,f,f,t,f,f,f,f,{},722,7,t,t
+144,c7_1_13,f,f,t,f,f,t,f,{},723,7,t,t
+145,c7_1_14,f,f,t,f,f,t,f,"{'"NCC'": '"True'", '"NSS'": '"True'"}",724,7,t,t
+146,c7_1_15,f,f,f,f,f,t,f,"{'"ETHICS'": '"True'"}",725,7,t,t
+147,c7_1_16,f,f,f,f,f,f,f,{},726,7,t,t
+148,c7_1_17,f,f,t,t,f,f,f,{},727,7,t,t
+149,c7_1_18,f,f,t,t,f,t,f,"{'"NCC'": '"True'", '"NSS'": '"True'"}",728,7,t,t
+150,c7_1_19,f,f,t,f,f,f,f,"{'"ADMINISTRATOR'": '"True'"}",729,7,t,t
+151,c7_2_1,f,f,t,f,f,t,f,"{'"VICE_PRINCIPALE'": '"True'"}",731,7,t,t
+152,c7_3_1,f,f,t,f,f,f,f,{},741,7,t,t
+153,c5_4_1B,f,f,f,t,f,t,f,"{'"ALUMNI'": '"True'"}",541.2,5,t,t
+1,c1_1_1,f,f,t,t,t,f,f,"'"\'"{}\'"'"",101,1,t,t

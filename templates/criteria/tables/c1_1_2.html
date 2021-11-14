@@ -1,0 +1,84 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Date </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Program </td>
+                            <td> {{obj.program }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Program code  </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Whether revision has been carried out in the syllabus  </td>
+                            <td> {{obj.text2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of Revision  </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Percentage of syllabus content added or replaced  </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> If 100% Revision, Name of the New course introduced  </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of BOS Meeting  </td>
+                            <td> {{obj.date2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of Academic Council  </td>
+                            <td> {{obj.date3 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Minutes of relevant Academic Council/BOS meeting </td>
+                                <td> {% if obj.file2 %}
+                                <a href="{{obj.file2.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                            
+                              <tr>
+                                <td> Details of program syllabus revision in last 5 years(Data Template) </td>
+                                <td> {% if obj.file3 %}
+                                <a href="{{obj.file3.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                            
+                              <tr>
+                                <td> Additional Info Files  </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Links </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

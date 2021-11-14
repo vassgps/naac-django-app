@@ -1,0 +1,75 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Date </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Type of feed Back  </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year  </td>
+                            <td> {{obj.text2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Collected or Not Collected </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Analysed or Not AAnalysed  </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Action Taken or Not  </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Published / Not published in website  </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of Governing Council meeting  </td>
+                            <td> {{obj.date2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of Academic Council Meeting </td>
+                            <td> {{obj.date3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td>  Date of Board of Management meeting </td>
+                            <td> {{obj.date4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Involvement of Stake Holders  </td>
+                            <td> {{obj.text7 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td>  Additional Info files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional info Links </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

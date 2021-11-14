@@ -1,0 +1,31 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Date  </th>  <th>  Department  </th>  <th>  Program name  </th>  <th> Program Code  </th>  <th> Tutor in Charge  </th>  <th> Number of students undertaking field project   </th>  <th> Areas of Field Project  </th>  <th> Areas of Internships  </th>  <th> Number of Students Undertaking Internship   </th>  <th> Institution of Internship   </th>  <th> Duration Of Internship   </th>  <th>  Data Template(List of Programs & No. of students)   </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.department }} </td>  <td> {{obj.program }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text2 }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text7 }} </td>  <td> {{obj.text8 }} </td> <td> {% if obj.file1 %} {{obj.file2.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Date  </th>  <th>  Department  </th>  <th>  Program name  </th>  <th> Program Code  </th>  <th> Tutor in Charge  </th>  <th> Number of students undertaking field project   </th>  <th> Areas of Field Project  </th>  <th> Areas of Internships  </th>  <th> Number of Students Undertaking Internship   </th>  <th> Institution of Internship   </th>  <th> Duration Of Internship   </th>  <th>  Data Template(List of Programs & No. of students)   </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

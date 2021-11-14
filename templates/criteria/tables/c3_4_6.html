@@ -1,0 +1,90 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the faculty  </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Book/Chapter/Conference Proceedings </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Title of the book/chapters published </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Title of the paper </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Title of the proceedings of the conference </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the conference </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> National / international </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of publication </td>
+                            <td> {{obj.text10 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> ISBN/ISSN  number of the proceeding </td>
+                            <td> {{obj.text11 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Affiliating Institute at the time of publication </td>
+                            <td> {{obj.text12 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the publisher </td>
+                            <td> {{obj.text13 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the supporting documents attached* </td>
+                            <td> {{obj.text14 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

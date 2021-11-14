@@ -1,0 +1,105 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+<!-- Main Content -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Criteria Inputs : {{cr_data.criteria}} </h3>
+            </div>
+            <div class='col-md-10'>
+                    <div class="card-body">
+                         <h5>{{cr_data.majour_id}} - {{cr_data.majour.main_title}} :
+                          {{cr_data.sub.sub_title}} </h5>
+                             <br>
+                        <h4> {{cr_data.criteria}}: {{cr_data.final_title}}</h4>
+
+                        <p>
+                           {{cr_data.final_description}}
+                        </p>
+            </div>
+
+                  <div class='col-md-12'>
+                      <div id="messages">
+                          {% if messages %}
+                            <div class="alert  alert-light alert-dismissible fade show" role="alert">
+                            {% for message in messages %}
+                            {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} {{ message }} </span>
+                            {% endfor %}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                           </div>
+                           {% endif %}
+                      </div>
+                        <form method="post" id="C1_1_1Form"  enctype="multipart/form-data"
+                              data-subject-url="{% url 'criterions:cr-ajax_load_subject' %}">
+                          {% csrf_token %}
+
+<!--                            {{form|crispy }}-->
+                              <div class="container">
+                                <div class="row">
+                                    {% for field in form  %}
+                                      <div class="col-sm-4">
+                                        <b style="display: flex; height:70px; margin-top:3px; align-items: flex-end; ">
+                                            {{ field.label_tag }}</b>  {{ field }}
+                                      </div>
+                                    {% endfor %}
+                                </div>
+                              </div>
+
+                            <br>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                           <a href="/criteria/show/{{cr_data.criteria_id}}"  class="btn btn-warning">Cancel</a>
+                          <input class="btn btn-primary" type="submit" name="add-next" value="Save and Add Next" />
+
+                        </form>
+                        <br>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $("#id_program").change(function () {
+        const url = $("#C1_1_1Form").attr("data-subject-url");  // get the url of the `load_subject` view
+        const programId = $(this).val();  // get the selected program ID from the HTML input
+
+        $.ajax({                       // initialize an AJAX request
+            url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+            data: {
+                'program_id': programId       // add the Program id to the GET parameters
+            },
+            success: function (data) {   // `data` is the return of the `load_subject` view function
+                $("#id_paper").html(data);  // replace the contents of the subject input with the data that came from the server
+                /*
+
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (subject) {
+                    html_data += `<option value="${paper.id}">${paper.name}</option>`
+                });
+                console.log(html_data);
+                $("#id_paper").html(html_data);
+
+                */
+            }
+        });
+
+    });
+</script>
+
+
+<!-- End Main content-->
+{% endblock %}

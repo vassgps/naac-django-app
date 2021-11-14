@@ -1,0 +1,75 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the Alumni </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Registered Alumni or not </td>
+                            <td> {{obj.text3 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Aadhar / PAN </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of graduation </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of Contribution </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Quantum of Contribution  </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Purpose  </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Non Financial Contribution  </td>
+                            <td> {{obj.text10 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Purpose </td>
+                            <td> {{obj.text11 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

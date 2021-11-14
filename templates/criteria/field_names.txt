@@ -1,0 +1,27 @@
+#--------------------------* 5.1.3 *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'text5', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Department', 'text2': 'Year of implementation ', 'text3': 'No. of Students Enrolled', 'text4': 'Program Detail', 'text5': 'Name & Address of Agencies involved', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3B *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'text5', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Department', 'text2': 'Year of implementation ', 'text3': 'No. of Students Enrolled', 'text4': 'Program details', 'text5': 'Name & Address of Agencies involved', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3C *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'text5', 'text6', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Department', 'text2': 'Year of implementation ', 'text3': 'No. of Students Enrolled', 'text4': 'Program Details', 'text5': 'Name & Address of Agencies involved', 'text6': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3D *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Year of implementation ', 'text2': 'Details of Program', 'text3': 'Name & Address of Agencies involved', 'text4': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3E *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Year of implementation ', 'text2': 'No. of Students Enrolled', 'text3': 'Name & Address of Agencies involved', 'text4': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3F *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'file1', 'url1')
+{ 'date': 'Year', 'text1': 'Year of implementation ', 'text2': 'No. of Students Enrolled', 'text3': 'Name & Address of Agencies involved', 'text4': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3G *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'text5', 'file1', 'url1')
+{'date': 'Year', 'text1': 'Year of implementation ', 'text2': 'No. of Students Enrolled', 'text3': 'Program Detail', 'text4': 'Name & Address of Agencies involved', 'text5': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3G *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'text5', 'file1', 'url1')
+{'date': 'Year', 'text1': 'Year of implementation ', 'text2': 'No. of Students Enrolled', 'text3': 'Program Detail', 'text4': 'Name & Address of Agencies involved', 'text5': 'Document No.', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}
+#--------------------------* 5.1.3H *---------------------------------------
+('cid', 'date', 'text1', 'text2', 'text3', 'text4', 'file1', 'url1')
+{'date': 'Year', 'text1': 'Year of implementation', 'text2': 'No. of Students Enrolled', 'text3': 'Name & Address of Agencies involved', 'text4': 'Document No', 'file1': 'Additional Information Files', 'url1': 'Additional Info Link'}

@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for paper in papers %}
+<option value="{{ paper.pk }}"> {{ paper.name }}</option>
+{% endfor %}

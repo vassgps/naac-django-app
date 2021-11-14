@@ -1,0 +1,44 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+{% block body %}
+
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+
+<!-- Main Content -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Criteria Menu Inputs </h3>
+            </div>
+
+            <div class="card-body">
+<!--              <div class="row justify-content-center">-->
+                <h4> Add a new Criterion ID </h4>
+                 <div class='col-md-4'>
+                    <form method="post"   enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <table border="1" class="table table-bordered mb-0">
+
+                        {{form|crispy}}
+
+                      </table>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                          <a href="/adminapp/assign-criterion"  class="btn btn-warning">Cancel</a>
+                    </form>
+
+                 </div>
+<!--              </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Main content-->
+{% endblock %}

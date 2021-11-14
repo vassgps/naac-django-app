@@ -1,0 +1,60 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Date </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td>  Department </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Course  </td>
+                            <td> {{obj.paper }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Course code  </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the Program </td>
+                            <td> {{obj.program }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of Introduction  </td>
+                            <td> {{obj.text2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of BOS meeting  </td>
+                            <td> {{obj.date2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Date of Academic Council meeting  </td>
+                            <td> {{obj.date3 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td>  Additional Info files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional info Links </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

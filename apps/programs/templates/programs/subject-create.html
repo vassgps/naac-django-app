@@ -1,0 +1,74 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+{% block body %}
+
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+
+<!-- Main Content -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Subject Inputs</h4>
+            </div>
+
+            <div class="card-body">
+<!--              <div class="row justify-content-center">-->
+                 <div class='col-md-4'>
+                    <form method="post" id="SubjectForm" enctype="multipart/form-data"
+                     data-subject-url="{% url 'programs:ajax_load_programs' %}">
+                      {% csrf_token %}
+                      <table border="1" class="table table-bordered mb-0">
+
+                        {{form|crispy}}
+
+                      </table>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                          <a href="/programs/programs"  class="btn btn-warning">Cancel</a>
+                    </form>
+
+                 </div>
+<!--              </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $("#id_department").change(function () {
+        const url = $("#SubjectForm").attr("data-subject-url");  // get the url of the `load_subject` view
+        const departmentId = $(this).val();  // get the selected program ID from the HTML input
+
+        $.ajax({                       // initialize an AJAX request
+            url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+            data: {
+                'department_id': departmentId       // add the Program id to the GET parameters
+            },
+            success: function (data) {   // `data` is the return of the `load_subject` view function
+                $("#id_program").html(data);  // replace the contents of the subject input with the data that came from the server
+                /*
+
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (subject) {
+                    html_data += `<option value="${paper.id}">${paper.name}</option>`
+                });
+                console.log(html_data);
+                $("#id_paper").html(html_data);
+
+                */
+            }
+        });
+
+    });
+</script>
+
+
+<!-- End Main content-->
+{% endblock %}

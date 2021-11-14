@@ -1,0 +1,258 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+<!-- Main Content -->
+	 <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Dashboard</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+									<li class="breadcrumb-item active">User Home</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+	 </div>
+
+
+		<!-- Page Wrapper -->
+<!--            <div class="page-wrapper">-->
+
+				<!-- Page Content -->
+                <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome {{user.first_name}} {{user.last_name}} </h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Your Current Role is: {{user.user_scope}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					        {% if messages %}
+							<div class="alert  alert-light alert-dismissible fade show" role="alert">
+							{% for message in messages %} {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} 	{{ message }} </span> {% endfor %}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">×</span>
+							</button>
+							</div>
+							{% endif %}
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-file-excel-o"></i></span>
+									<div class="dash-widget-info">
+										<h3>Excel Reports</h3>
+										<span>MS-Excel Report</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-file-text-o"></i></span>
+									<div class="dash-widget-info">
+										<h3>CSV Reports</h3>
+										<span>Comma Separated Values</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-file-pdf-o"></i></span>
+									<div class="dash-widget-info">
+										<h3>PDF Reports</h3>
+										<span>PDF Data Reports</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-file-archive-o"></i></span>
+									<div class="dash-widget-info">
+										<h3>Report Generator</h3>
+										<span>App will launch soon..!</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<!--					Solid Tabs Menu-->
+					<div class="row">
+							<div class="col-md-10">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title"> Report Generation</h4>
+										<ul class="nav nav-tabs nav-tabs-solid">
+											<li class="nav-item"><a class="nav-link active" href="#solid-tab1" data-toggle="tab"> Criterion 1</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab2" data-toggle="tab">Criterion 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab3" data-toggle="tab">Criterion 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab4" data-toggle="tab">Criterion 4</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab5" data-toggle="tab">Criterion 5</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab6" data-toggle="tab">Criterion 6</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab7" data-toggle="tab">Criterion 7</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane show active" id="solid-tab1">
+												      <div class="table-responsive col-md-6">
+														  	  <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 1</th>
+
+															  </thead>
+															  <tbody>
+															  {% for obj in cr_data %}
+															    {% if obj.cr_index == 1 %}
+																  <tr>
+																	<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																  </tr>
+															  	{% endif %}
+															  {% endfor %}
+
+															  </tbody>
+														  </table>
+													  </div>
+											</div>
+											<div class="tab-pane" id="solid-tab2">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 2 </th>
+
+															  </thead>
+															  <tbody>
+															  {% for obj in cr_data %}
+																	{% if obj.cr_index == 2 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+															  {% endfor %}
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab3">
+												<div class="table-responsive col-md-6">
+												 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 3</th>
+
+															  </thead>
+															  <tbody>
+															  {% for obj in cr_data %}
+																	{% if obj.cr_index == 3 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+															  {% endfor %}
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab4">
+												      <div class="table-responsive col-md-6">
+														 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 4</th>
+
+															  </thead>
+															  <tbody>
+
+																  {% for obj in cr_data %}
+																	{% if obj.cr_index == 4 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+																  {% endfor %}
+															  </tbody>
+														  </table>
+													  </div>
+											</div>
+											<div class="tab-pane" id="solid-tab5">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 5</th>
+
+															  </thead>
+															  <tbody>
+																 {% for obj in cr_data %}
+																	{% if obj.cr_index == 5 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+																 {% endfor %}
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab6">
+												<div class="table-responsive col-md-6">
+												 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 6</th>
+
+															  </thead>
+															  <tbody>
+															  {% for obj in cr_data %}
+																	{% if obj.cr_index == 6 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+															  {% endfor %}
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab7">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion - 7</th>
+
+															  </thead>
+															  <tbody>
+															  	{% for obj in cr_data %}
+																	{% if obj.cr_index == 7 %}
+																	  <tr>
+																		<td> <a href="/criteria/adv-reports/{{obj.criteria}}"> {{obj.criteria}} </a> </td>
+																	  </tr>
+																	{% endif %}
+																{% endfor %}
+
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+                </div>
+
+<!-- End Main content-->
+{% endblock %}

@@ -1,0 +1,29 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                            
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                             
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

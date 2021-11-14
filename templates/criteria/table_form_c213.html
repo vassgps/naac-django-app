@@ -1,0 +1,294 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+<!-- Main Content -->
+
+<style>
+.table-wrapper {width:100%; padding:30px 10px; padding-left:30px}
+    .form-table {border:1px solid; width:100%;}
+    .form-table td, .form-table th {padding:5px; border:1px solid;}
+    .form-table input {width:100%;border:1px solid; padding:3px; }
+   form {display: flex;
+        flex-wrap: wrap;
+        width:100%;}
+        .button {margin:auto; margin-top:30px; display:flex; gap:10px; width:fit-content;}
+</style>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Criteria Inputs : {{cr_data.criteria}} </h3>
+            </div>
+            <div class='col-md-10'>
+                    <div class="card-body">
+                         <h5>{{cr_data.majour_id}} - {{cr_data.majour.main_title}} :
+                          {{cr_data.sub.sub_title}} </h5>
+                             <br>
+                        <h4> {{cr_data.criteria}}: {{cr_data.final_title}}</h4>
+
+                        <p>
+                           {{cr_data.final_description}}
+                        </p>
+                    </div>
+            </div>
+             <div class="content container-fluid">
+
+                      <div id="messages">
+                          {% if messages %}
+                            <div class="alert  alert-light alert-dismissible fade show" role="alert">
+                                {% for message in messages %}
+                                {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} {{ message }} </span>
+                                {% endfor %}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                           </div>
+                           {% endif %}
+                      </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row table-wrapper">
+    <form id="myForm" method="post" action="" >
+        {% csrf_token %}
+         <input name="csrfToken" value="5965f0d244b7d32b334eff840...etc" type="hidden">
+
+                <div class="col-sm-6" style="background-color: yellow;">
+         <table class="form-table">
+                <thead>
+                <tr>
+                    <th colspan="3" style="text-align:center"> AIDED </th>
+                </tr>
+                <tr>
+                    <th style="width:20%">Category</th>
+                     <th style="width:40%">Reserved Seats</th>
+                     <th style="width:40%">Admited Students</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>SC</td>
+                    <td>
+                        <input type="text" name="r1">
+                    </td>
+                    <td> <input type="text" name="a1"></td>
+                </tr>
+                <tr>
+                    <td>ST</td>
+                    <td>
+                        <input type="text" name="r2">
+                    </td>
+                    <td> <input type="text" name="a2"></td>
+                </tr>
+
+                <tr>
+                    <td>COMMUNITY</td>
+                    <td>
+                        <input type="text" name="r3">
+                    </td>
+                    <td> <input type="text" name="a3"></td>
+                </tr>
+
+		        <tr>
+                    <td>GENERAL</td>
+                    <td>
+                        <input type="text" name="r4">
+                    </td>
+                    <td> <input type="text" name="a4"></td>
+                </tr>
+
+		        <tr>
+                    <td>PH</td>
+                    <td>
+                        <input type="text" name="r5">
+                    </td>
+                    <td> <input type="text" name="a5"></td>
+                </tr>
+
+		        <tr>
+                    <td>SPORTS</td>
+                    <td>
+                        <input type="text" name="r6">
+                    </td>
+                    <td> <input type="text" name="a6"></td>
+                </tr>
+
+		        <tr>
+                    <td>MANAGEMENT</td>
+                    <td>
+                        <input type="text" name="r7">
+                    </td>
+                    <td> <input type="text" name="a7"></td>
+                </tr>
+		        <tr>
+                    <td>OTHERS</td>
+                    <td>
+                        <input type="text" name="r8">
+                    </td>
+                    <td> <input type="text" name="a8"></td>
+                </tr>
+                <tr>
+                    <td>YEAR</td>
+                    <td>
+                        <P>* Select Any Date </P>
+                    </td>
+                    <td> <input type="date" name="date"></td>
+                </tr>
+                </tbody>
+            </table>
+           </div>
+
+                 <div class="col-sm-6">
+            <table class="form-table">
+                <thead>
+                <tr>
+                    <th colspan="3" style="text-align:center">UNAIDED</th>
+                </tr>
+                <tr>
+                    <th style="width:20%">Category</th>
+                     <th style="width:40%">Reserved Seats</th>
+                     <th style="width:40%">Admited Students</th>
+                </tr>
+                </thead>
+                <tbody>
+
+		        <tr>
+                    <td>SC</td>
+                    <td>
+                        <input type="text" name="r11">
+                    </td>
+                    <td> <input type="text" name="a11"></td>
+                </tr>
+                <tr>
+                    <td>ST</td>
+                    <td>
+                        <input type="text" name="r12">
+                    </td>
+                    <td> <input type="text" name="a12"></td>
+                </tr>
+
+                <tr>
+                    <td>COMMUNITY</td>
+                    <td>
+                        <input type="text" name="r13">
+                    </td>
+                    <td> <input type="text" name="a13"></td>
+                </tr>
+
+		        <tr>
+                    <td>GENERAL</td>
+                    <td>
+                        <input type="text" name="r14">
+                    </td>
+                    <td> <input type="text" name="a14"></td>
+                </tr>
+
+		        <tr>
+                    <td>PH</td>
+                    <td>
+                        <input type="text" name="r15">
+                    </td>
+                    <td> <input type="text" name="a15"></td>
+                </tr>
+
+		        <tr>
+                    <td>SPORTS</td>
+                    <td>
+                        <input type="text" name="r16">
+                    </td>
+                    <td> <input type="text" name="a16"></td>
+                </tr>
+
+		        <tr>
+                    <td>MANAGEMENT</td>
+                    <td>
+                        <input type="text" name="r17">
+                    </td>
+                    <td> <input type="text" name="a17"></td>
+                </tr>
+		        <tr>
+                    <td>ETB</td>
+                    <td>
+                        <input type="text" name="r18">
+                    </td>
+                    <td> <input type="text" name="a18"></td>
+                </tr>
+                <tr>
+                    <td>MUSLIM</td>
+                    <td>
+                        <input type="text" name="r19">
+                    </td>
+                    <td> <input type="text" name="a19"></td>
+                </tr>
+                <tr>
+                    <td>LC</td>
+                    <td>
+                        <input type="text" name="r20">
+                    </td>
+                    <td> <input type="text" name="a20"></td>
+                </tr>
+                <tr>
+                    <td>OBX</td>
+                    <td>
+                        <input type="text" name="r21">
+                    </td>
+                    <td> <input type="text" name="a21"></td>
+                </tr>
+                <tr>
+                    <td>OBH</td>
+                    <td>
+                        <input type="text" name="r22">
+                    </td>
+                    <td> <input type="text" name="a22"></td>
+                </tr>
+                <tr>
+                    <td>Other</td>
+
+                    <td>
+                        <input type="text" name="r23">
+                    </td>
+                    <td> <input type="text" name="a23"> </td>
+                </tr>
+                </tbody>
+            </table>
+                </div>
+        <div class="button">
+                <input type="submit" value="submit" class="btn btn-success">
+        </div>
+    </form>
+        <div class="button">
+        <a href="/criteria/show/c2_1_3">
+               <button type="reset" class="btn btn-warning" style="color:#fff;"> Go Back </button> </a>
+         </div>
+    </div>
+<script>
+    var formData = JSON.stringify($("#myForx").serializeArray());
+    var token = document.getElementsByName("csrfToken").value;
+
+      $.ajax({
+      type: "POST",
+      url: "http://127.0.0.1:8000/criteria/create/c2_1_3",
+      data: formData,
+      success: function(){},
+      dataType: "json",
+      contentType : "application/json",
+      headers: {'X-CSRFToken': token }
+    });
+
+</script>
+
+
+<!-- End Main content-->
+{% endblock %}

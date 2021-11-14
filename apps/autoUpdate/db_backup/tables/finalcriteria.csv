@@ -1,0 +1,154 @@
+id,id_name,criteria,final_title,final_description,criteria_id,keywords,is_active,majour_id,sub_id
+2,2,1.1.2,Syllabus Revision,,c1_1_2,Syllabus Revision,t,1,1
+13,2,2.1.2,Demand Ratio,,c2_1_2,Demand Ratio,t,2,5
+18,1,2.3.1,Students Centric Methods,,c2_3_1,Students Centric Methods,t,2,7
+19,2,2.3.2,Teacher Using ICT with LMS and E-Learning,,c2_3_2,Teacher Using ICT with LMS and E-Learning,t,2,7
+20,3,2.3.3,Mentor for academic and stress related issues,,c2_3_3,Mentor for academic and stress related issues,t,2,7
+21,4,2.3.4,Academic calender and teaching plan,,c2_3_4,Academic calender and teaching plan,t,2,7
+22,1,2.4.1,Full time teachers against sanctioned post,,c2_4_1,Full time teachers against sanctioned post,t,2,8
+23,2,2.4.2,Full time teachers with Ph.D,,c2_4_2,Full time teachers with Ph.D,t,2,8
+24,3,2.4.3,Teaching experience of full time teachers,,c2_4_3,Teaching experience of full time teachers,t,2,8
+25,4,2.4.4,"Awards, recognition, fellowship from Govt/recognised bodies received",,c2_4_4,"Awards, recognition, fellowship from Govt",t,2,8
+26,5,2.4.5,Full time teachers from other states against sanction post,,c2_4_5,Full time teachers from other states,t,2,8
+28,2,2.5.2,Students Complaints / Grievances about evaluation,,c2_5_2,Students Complaints / Grievances about evaluation,t,2,9
+36,1,3.1.1,Policy for promotion of research - To be Uploaded on the institutional website,,c3_1_1,Policy for promotion of research - To be Uploaded,t,3,12
+37,2,3.1.2,Seed money for the teachers by the institution for research,,c3_1_2,Seed money for the teachers by the institution,t,3,12
+38,3,3.1.3,International fellowship for advanced studies/research awarded,,c3_1_3,International fellowship for advanced studies,t,3,12
+39,4,3.1.4,Facilities in the Institutions,,c3_1_4,Facilities in the Institutions,t,3,12
+40,1,3.2.1,Grants for research projects  received,,c3_2_1,Grants for research projects  received,t,3,13
+41,2,3.2.2,Research centers recognised by institution and national / international bodies,,c3_2_2,Research centers recognised by institution,t,3,13
+42,3,3.2.3,Teachers recognized as research guides,,c3_2_3,Teachers recognized as research guides,t,3,13
+46,3,3.3.3,Award for innovation in research(Teachers/Research Scholars/Students),,c3_3_3,Award for innovation in research,t,3,14
+47,1,3.4.1,Code of ethics to check malpractices and plagiarism in research,,c3_4_1,Code of ethics to check malpractices,t,3,15
+5,2,1.2.2,Programs is which choice based credit system / Elective course system has been implemented,"",c1_2_2,Programs is which choice based,t,1,2
+4,1,1.2.1,Introduction of new courses,"",c1_2_1,Introduction of new courses,t,1,2
+7,2,1.3.2,Percentage of students enrolled in value added courses,"",c1_3_2,Value added courses imparting transferable,t,1,3
+8,3,1.3.3,Percentage of students enrolled in value added courses,"",c1_3_3,Percentage of students enrolled in value,t,1,3
+9,4,1.3.4,Students undertaking field projects / Internships,"",c1_3_4,Students undertaking field projects,t,1,3
+10,1,1.4.1,Feedback with reference to design and review of syllabus,"",c1_4_1,Feedback with reference to design and review,t,1,4
+11,2,1.4.2,Feed back processes,"",c1_4_2,Feed back processes,t,1,4
+43,4,3.2.4,Number of research projects per teacher funcded by government and non government agencies,,c3_2_4,Number of research projects per teacher,t,3,13
+3,3,1.1.3,Courses having focus on employability / entrepreneurship / skill development,"",c1_1_3,Courses having focus on employability,t,1,1
+14,3,2.1.3,Seat filled against seats reserved for various categories as per applicable reservation policy,"",c2_1_3,"Seat, seats, reserved, for various, categories, reservation policy",t,2,5
+15,1,2.2.1,Assessing the learning levels of the students after admission and programs arranged,"",c2_2_1,Assessing the learning levels of the students after admission and programs arranged,t,2,6
+16,2,2.2.2,Student - full time teacher ratio,"",c2_2_2,Student  full time teacher ratio,t,2,6
+17,3,2.2.3,Differentially abled students (Divyangjan),"",c2_2_3,"Differentially abled students ,Divyangjan",t,2,6
+27,1,2.5.1,No of days from the date of last semester end / year end examination till the declaration of the results,"",c2_5_1,No of days from the date of last semester end / year end examination till the declaration of the results,t,2,9
+29,3,2.5.3,Applications for revaluation leading to change in marks,"",c2_5_3,Applications for revaluation leading to change in marks,t,2,9
+31,5,2.5.5,Automation of examination division along with approved examination manual,"",c2_5_5,Automation of examination division along with approved examination manual,t,2,9
+32,1,2.6.1,Program Outcome & Course Outcome displayed on website,"",c2_6_1,Program Outcome & Course Outcome displayed on website,t,2,10
+33,2,2.6.2,Program outcomes program specific outcomes and course outcomes and evaluation,"",c2_6_2,Program outcomes program specific outcomes and course outcomes and evaluation,t,2,10
+34,3,2.6.3,Pass percentage of students,"",c2_6_3,Pass percentage of students,t,2,10
+35,1,2.7.1,Online Student Satisfaction Survey on Teaching Learning Process,"",c2_7_1,Online Student Satisfaction Survey on Teaching Learning Process,t,2,11
+12,1,2.1.1,Students from other states and countries,"",c2_1_1,Students from other states and countries,t,2,5
+49,3,3.4.3,Patents  submitted /awarded,,c3_4_3,Patents  submitted /awarded,t,3,15
+51,5,3.4.5,Research papers Published,,c3_4_5,Research papers Published,t,3,15
+55,1,3.5.1,Consultancy including revenue sharing between the institution and the individual,,c3_5_1,Consultancy including revenue sharing,t,3,16
+56,2,3.5.2,Revenue Genrated,,c3_5_2,Revenue Genrated,t,3,16
+57,3,3.5.3,Revenue generated from corporate training by the institution,,c3_5_3,Revenue generated from corporate training,t,3,16
+62,1,3.7.1,"Collabrative activity for research, Faculty exchange, Student Exchange",,c3_7_1,"Collabrative activity for research, Faculty exchan",t,3,18
+65,1,4.1.1,Adequate facilities for teaching-learning,,c4_1_1,Adequate facilities for teaching-learning,t,4,19
+66,2,4.1.2,Adequate facilities for sports / games / cultural activities,,c4_1_2,Adequate facilities for sports / games / cultural,t,4,19
+67,3,4.1.3,Class rooms and seminar halls with ICT,,c4_1_3,Class rooms and seminar halls with ICT,t,4,19
+68,4,4.1.4,Percentage of budget allocation (Infrastructure Augumentation excluding salary),,c4_1_4,Percentage of budget allocation,t,4,19
+69,1,4.2.1,Library Automation (ILMS),,c4_2_1,Library Automation (ILMS),t,4,20
+70,2,4.2.2,Library Enrichment,,c4_2_2,Library Enrichment,t,4,20
+71,3,4.2.3,Library as a learning resource,,c4_2_3,Library as a learning resource,t,4,20
+72,4,4.2.4,Annual Expenditure for purchase of book and journals,,c4_2_4,Annual Expenditure for purchase of book,t,4,20
+73,5,4.2.5,Availability of remote access to E-resourese of the library,,c4_2_5,Availability of remote access,t,4,20
+74,6,4.2.6,Library usage by teachers and students,,c4_2_6,Library usage by teachers and students,t,4,20
+75,1,4.3.1,Updation of IT facilities,,c4_3_1,Updation of IT facilities,t,4,21
+76,2,4.3.2,Student Computer ratio,,c4_3_2,Student Computer ratio,t,4,21
+77,3,4.3.3,Bandwidth of Internet Connection,,c4_3_3,Bandwidth of Internet Connection,t,4,21
+78,4,4.3.4,E-content development media center recording facility etc.,,c4_3_4,E-content development media center recording,t,4,21
+80,2,4.4.2,"Systems and procedures for maintaing physical, academic and support facilities",,c4_4_2,Systems and procedures for maintaing physical,t,4,22
+81,1,5.1.1,Students benefited by scholorships/  freeships by the government,,c5_1_1,Students benefited by scholorships/  freeships by,t,5,23
+83,3,5.1.3,Capability enhancement and development Schemes,,c5_1_3,Capability enhancement and development Schemes,t,5,23
+85,5,5.1.5,Students benefited by vocational education and training (VET),,c5_1_5,Students benefited by vocational education,t,5,23
+87,1,5.2.1,Placement of outgoing students,,c5_2_1,Placement of outgoing students,t,5,24
+88,2,5.2.2,Student progression to higher education,,c5_2_2,Student progression to higher education,t,5,24
+89,3,5.2.3,Students qualifying in state / National / International Examination,,c5_2_3,Students qualifying in state / National / Internat,t,5,24
+79,1,4.4.1,"Expenditure incurred on maintanance of physical facilities, academic support facilities etc. (Excluding Salary)",,c4_4_1,Expenditure incurred on maintanance of physical,t,4,22
+82,2,5.1.2,Students Benefited by scholarships / Freeships Provided by the institution besides government schemes,,c5_1_2,Students Benefited by scholarships / Freeships,t,5,23
+84,4,5.1.4,Students benefited by guidance for competitive exams and carrer couselling offered by the institution,,c5_1_4,Students benefited by guidance,t,5,23
+86,6,5.1.6,Transparent Mechanism for timely redressal of student grievances including sexual harrasment and ragging cases,,c5_1_6,Transparent Mechanism for timely redressal,t,5,23
+90,1,5.3.1,Awards or medals for outstanding performance in sports / cultutral activities at national / international level,,c5_3_1,Awards or medals for outstanding performance,t,5,25
+91,2,5.3.2,Student Council and representation of students on academic and admistrative bodies / commities of the instituion ,,c5_3_2,Student Council and representation of students,t,5,25
+92,3,5.3.3,Sports and cultural activities or competitions organised at the institution level,,c5_3_3,Sports and cultural activities or competitions org,t,5,25
+93,1A,5.4.1A,Alumni Associations / Chapters meeting,,c5_4_1A,Alumni Associations / Chapters meeting,t,5,26
+94,2,5.4.2,Alumni financial Contribution,,c5_4_2,Alumni financial Contribution,t,5,26
+95,1,6.1.1,VISION AND MISSION OF THE INSTITUTION,,c6_1_1,VISION AND MISSION OF THE INSTITUTION,t,6,27
+96,2,6.1.2,Decentralization and participative management,,c6_1_2,Decentralization and participative management,t,6,27
+97,1,6.2.1,Strategic plan and deployment,,c6_2_1,Strategic plan and deployment,t,6,28
+98,2,6.2.2,Organization Structure,,c6_2_2,Organization Structure,t,6,28
+99,3,6.2.3,Implementation of E-governance in areas of operation,,c6_2_3,Implementation of E-governance in areas,t,6,28
+101,1,6.3.1,Welfare measures for teaching and non-teaching staff,,c6_3_1,Welfare measures for teaching and non-teaching,t,6,29
+105,5,6.3.5,Performance appraisal system for teaching and non teaching staff,,c6_3_5,Performance appraisal system for teaching,t,6,29
+106,1,6.4.1,Internal and external financial audits,,c6_4_1,Internal and external financial audits,t,6,30
+111,3,6.5.3,No.of quality initiatives by IQAC for promoting quality culture,,c6_5_3,No.of quality initiatives by IQAC for promoting,t,6,31
+112,4,6.5.4,Quality Assurance initiatives of the institution,,c6_5_4,Quality Assurance initiatives of the institution,t,6,31
+114,1,7.1.1,Gender equity promotion programs organised by the institution,,c7_1_1,Gender equity promotion programs organised by the,t,7,32
+115,2,7.1.2,Gender equity intiatives under taken by the institution,,c7_1_2,Gender equity intiatives,t,7,32
+116,3,7.1.3,Power Requirement met by renewable energy sources,,c7_1_3,Power Requirement met by renewable energy sources,t,7,32
+117,4,7.1.4,Annual ligithing power requirement met through LED bulbs,,c7_1_4,Annual ligithing power requirement met through LED,t,7,32
+118,5,7.1.5,Waste Management,,c7_1_5,Waste Management,t,7,32
+119,6,7.1.6,Rain Water Harvesting,,c7_1_6,Rain Water Harvesting,t,7,32
+120,7,7.1.7,Green Practices,,c7_1_7,Green Practices,t,7,32
+121,8,7.1.8,Expenditure on Green initiatives and waste management,,c7_1_8,Expenditure on Green initiatives,t,7,32
+122,9,7.1.9,Differentially abled (Divyangjan) friendlyness resourceses,,c7_1_9,Differentially abled (Divyangjan) friendlyness,t,7,32
+123,10,7.1.10,Initiatives to address Locational advantages and disadvantages,,c7_1_10,Initiatives to address Locational advantages,t,7,32
+124,11,7.1.11,Initiatives taken to engage with and contribution to local community,,c7_1_11,Initiatives taken to engage with and contribution,t,7,32
+125,12,7.1.12,Code of conduct handbook,,c7_1_12,Code of conduct handbook,t,7,32
+126,13,7.1.13,Core Values in the institution,,c7_1_13,Core Values in the institution,t,7,32
+127,14,7.1.14,"Activities to increase attitude on national identities, fundamental duties etc",,c7_1_14,Activities to increase attitude,t,7,32
+128,15,7.1.15,Course on human values and professional ethics,,c7_1_15,Course on human values and professional ethics,t,7,32
+130,17,7.1.17,Activities conducted for promotion of universal values,,c7_1_17,Activities conducted for promotion of universal va,t,7,32
+132,19,7.1.19,Transperancy in financial / academic / admnistrative / auxillary functions,,c7_1_19,Transperancy in financial / academic,t,7,32
+133,1,7.2.1,Institutional best practices,,c7_2_1,Institutional best practices,t,7,33
+134,1,7.3.1,Performance of the institution with respect to its vision priority and thrust,,c7_3_1,Performance of the institution with respect to it,t,7,34
+135,2A,4.1.2A,Adequate facilities for sports Infrastructure,,c4_1_2A,"facility,sports, Infrastructure",t,4,19
+136,2B,4.1.2B,Adequate facilities for Equipments,,c4_1_2B,Equipments,t,4,19
+137,2C,4.1.2C,Event,,c4_1_2C,Events,t,4,19
+138,2D,4.1.2D,Cultural activities,,c4_1_2D,Cultural activities,t,4,19
+139,2E,4.1.2E,Cultural activities based on Level (B-Zone / Inter Zone / South Zone),,c4_1_2E,Level (B-Zone / Inter Zone / South Zone),t,4,19
+140,3A,5.1.3A,Guidance for competetive examinations,,c5_1_3A,Guidance for competetive examinations,t,5,23
+141,3B,5.1.3B,Carreer Couselling,,c5_1_3B,Couselling,t,5,23
+142,3C,5.1.3C,Soft Skill development,,c5_1_3C,Soft Skill,t,5,23
+143,3D,5.1.3D,Remedial Coaching,,c5_1_3D,Remedial Coaching,t,5,23
+144,3E,5.1.3E,Language Lab,,c5_1_3E,Language Lab,t,5,23
+145,3F,5.1.3F,Bridge Courses,,c5_1_3F,Bridge Courses,t,5,23
+146,3G,5.1.3G,Personal couselling,,c5_1_3G,Personal couselling,t,5,23
+147,3H,5.1.3H,Yoga and meditation,,c5_1_3H,Yoga and meditation,t,5,23
+148,2A,5.3.2A,Student Council and representation of students on academic,,c5_3_2A,Student Council and representation,t,5,25
+149,2B,5.3.2B,Activities organised by the students/ associations,,c5_3_2B,Activities organised by the students/ associations,t,5,25
+150,2A,7.1.2A,SAFETY AND SECURITY MEASURES,,c7_1_2A,SAFETY AND SECURITY MEASURES,t,7,32
+151,2B,7.1.2B,Gender equity intiatives under taken by the institution:  COUNSELLING,,c7_1_2B,Gender equity intiatives under taken by the instit,t,7,32
+152,2C,7.1.2C,Gender equity intiatives under taken by the institution: COMMON ROOM / OTHER,,c7_1_2C,COMMON ROOM / OTHER,t,7,32
+153,1B,5.4.1B,CHAPTERS MEETINGS,,c5_4_1B,"Alumni Associations , Chapters meeting",t,5,19
+104,4,6.3.4,Teachers attending profession development programs (Orientation / Referesher /Short term Courses),,c6_3_4,Teachers attending profession development programs,t,6,29
+6,1,1.3.1,"Integration of cross cutting issues relevant to gender, environment, sustainability, human values and professional ethics into the curriculum","",c1_3_1,Integration of cross cutting issues,t,1,3
+30,4,2.5.4,Reforms on the examination procedures and processes including IT integration and continuous internal assessment on the examination management system,"",c2_5_4,Reforms on the examination procedures and processes including IT integration and continuous internal assessment on the examination management system,t,2,9
+107,2,6.4.2,Funds or grants received from non government bodies / individuals /  philanthropers,,c6_4_2,Funds or grants received from non government,t,6,30
+1,1,1.1.1,Curricula having relevant to the local / national / regional / global development needs with learning objectives,"",c1_1_1,"the local ,national, regional, global",t,1,1
+44,1,3.3.1,Eco system for innovations including incubation center and other initiativies for creations and transfer of knowledge ,,c3_3_1,Eco system for innovations including incubation,t,3,14
+45,2,3.3.2,Details of workshops/seminars conducted on Intellectual Property Rights (IPR) and Industry-Academia Innovative practices ,,c3_3_2,Details of workshops/seminars conducted,t,3,14
+48,2,3.4.2,"Institution provides incentives to teachers who receive state, national and international recognition / awards",,c3_4_2,Institution provides incentives to teachers,t,3,15
+50,4,3.4.4,Details of students Registered as research scholars and details of PhD awarded during the yaer,,c3_4_4,Details of students Registered as research,t,3,15
+52,6,3.4.6,Published books/chapters in edited volumes / papers in national/international conference proceedings,,c3_4_6,Published books/chapters in edited volumes / paper,t,3,15
+53,7,3.4.7,Bibiliometrices of the publication based on average citation index in scopus / web of sciecne or pubmed / indian citation index/H Index,,c3_4_7,Bibiliometrices of the publication,t,3,15
+54,8,3.4.8,Bibiliometrices based on scopus / web of science - H index of the institution ,,c3_4_8,Bibiliometrices based on scopus,t,3,15
+58,1,3.6.1,Extension Activities in the neigbourhood community in terms of impact of sensitizing studnets to social issues .,,c3_6_1,Extension Activities in the neigbourhood,t,3,17
+59,2,3.6.2,Awards and recoginition received for extention activity from government / recognized bodies,,c3_6_2,Awards and recoginition received for extention,t,3,17
+60,3,3.6.3,"Extenstion and outreach programs conducted in collabration with industry, community and NGO through NSS / NCC/ Red cross etc,.",,c3_6_3,Extenstion and outreach programs conducted,t,3,17
+61,4,3.6.4,Students participating in extention activities with government organisation / NGO/ Programs such as Swatch Bharat etc.,,c3_6_4,Students participating in extention activities,t,3,17
+63,2,3.7.2,Linkages with institution / industry for internship / on the job training / project work / sharing of research facilities /Field trip,,c3_7_2,Linkages with institution / industry,t,3,18
+64,3,3.7.3,Functional MoUs with institution of nation / international importance / other instituion / industries/ corporate houses,,c3_7_3,Functional MoUs with institution of nation,t,3,18
+100,4,6.2.4,Activity sucessfully implemented based on the minutes of the meetings and implementation ,,c6_2_4,Activity sucessfully implemented,t,6,28
+102,2,6.3.2,Teachers provided with financial support to attended conferences / workshops and towards membership fee of professional bodies,,c6_3_2,teachers provided with financial support,t,6,29
+103,3,6.3.3,No of professional development / administrative training programs organised the institution for teaching and non teaching ,,c6_3_3,No of professional development / administrative,t,6,29
+108,3,6.4.3,Institutional strategies for mobilisation of funds and optimal utilisation of resources ,,c6_4_3,Institutional strategies for mobilisation of funds,t,6,30
+109,1,6.5.1,Two practices institutionalised for quality assurance as a result of IQAC initiatives ,,c6_5_1,Two practices institutionalised for quality,t,6,31
+110,2,6.5.2,Institutional reviews and implementation of teaching learning reforms facilitated by the IQAC,,c6_5_2,Institutional reviews and implementation,t,6,31
+113,5,6.5.5,Post Accredation Quality Enhancement Initiatives in the academic and administrative domains,,c6_5_5,Post Accredation Quality Enhancement Initiatives,t,6,31
+129,16,7.1.16,Institutional functioning as per professional code sugessted by statutory bodies / regulatory authorities for different professions,,c7_1_16,Institutional functioning as per professional,t,7,32
+131,18,7.1.18,Organizing National festivals and birth or death aniversaries of the great indian personalities,,c7_1_18,Organizing National festivals and birth or death,t,7,32

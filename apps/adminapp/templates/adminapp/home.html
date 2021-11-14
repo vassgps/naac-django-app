@@ -1,0 +1,147 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+<style>
+	tr{background-color:#fff;}
+
+</style>
+<!-- Main Content -->
+	 <div class="content container-fluid" style="padding-bottom:0;">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Dashboard</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+									<li class="breadcrumb-item active">User Home</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+	 </div>
+
+
+		<!-- Page Wrapper -->
+<!--            <div class="page-wrapper">-->
+
+				<!-- Page Content -->
+                <div class="content container-fluid"  style="padding-top:0;">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome {{user.first_name}} {{user.last_name}} </h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Your Current Role is: {{user.user_scope}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					        {% if messages %}
+							<div class="alert  alert-light alert-dismissible fade show" role="alert">
+							{% for message in messages %} {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} 	{{ message }} </span> {% endfor %}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">×</span>
+							</button>
+							</div>
+							{% endif %}
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{total_users}} Users</h3>
+										<span> <a href="/adminapp/allusers/"> View All</a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-plus-square"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{joined_today}} New</h3>
+										<span> <a href="/adminapp/pendingusers/"> Activation Pending </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+							<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-calendar"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{total_events}} Events</h3>
+										<a href="/adminapp/event"> Add Event </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{total_criteria}} Criteria</h3>
+										<a href="/adminapp/summury">View Summury </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row" id="table-data">
+                        <div class="container">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                  <thead>
+                                       <th>Quick Summary</th>
+                                       <th>Data</th>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <th>Total Active Criterions</th>
+                                          <th> {{active_criteria}} </th>
+                                      </tr>
+								  	   <tr>
+                                          <th>Total Criterions Assigned for you</th>
+                                          <th>{{assigned_for_naac}} </th>
+                                      </tr>
+
+									  <tr>
+                                          <th>Total Clubs (Active) </th>
+                                          <th>{{total_clubs}} </th>
+                                      </tr>
+								       <tr>
+                                          <th>Total Departments (Active) </th>
+                                          <th>{{total_dept}}</th>
+                                      </tr>
+
+								    	<tr>
+                                          <th>Total Programs (Active)</th>
+                                          <th>{{total_programs}}</th>
+                                      	</tr>
+								  		  <tr>
+                                          <th>Total Subjects (Papers) </th>
+                                          <th>{{total_paper}}</th>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- End Main content-->
+{% endblock %}

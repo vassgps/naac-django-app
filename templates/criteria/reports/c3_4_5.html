@@ -1,0 +1,31 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Year  </th>  <th> Title of paper  </th>  <th> Name of the author/s  </th>  <th> Department of the teacher  </th>  <th> Designation   </th>  <th> Name of journal  </th>  <th> National/International  </th>  <th> Year of publication  </th>  <th> Average Impact Factor, if any  </th>  <th> ISS0 Number  </th>  <th> UGC listed or not  </th>  <th> Name of the supporting documents attached*  </th>  <th> Journal Link   </th>  <th> Document  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text2 }} </td>  <td> {{obj.department }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text8 }} </td>  <td> {{obj.text9 }} </td>  <td> {{obj.text10 }} </td>  <td> {{obj.text11 }} </td>  <td> {{obj.text12 }} </td>  <td> {{obj.text13 }} </td> <td> {% if obj.file1 %} {{obj.file2.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Year  </th>  <th> Title of paper  </th>  <th> Name of the author/s  </th>  <th> Department of the teacher  </th>  <th> Designation   </th>  <th> Name of journal  </th>  <th> National/International  </th>  <th> Year of publication  </th>  <th> Average Impact Factor, if any  </th>  <th> ISS0 Number  </th>  <th> UGC listed or not  </th>  <th> Name of the supporting documents attached*  </th>  <th> Journal Link   </th>  <th> Document  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

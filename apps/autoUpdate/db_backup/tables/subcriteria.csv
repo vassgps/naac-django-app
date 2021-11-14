@@ -1,0 +1,35 @@
+id,sub,id_name,sub_title,sub_description,majour_id
+1,1,1_1,Curriculum Design and Development,Curriculum Design and Development,1
+2,2,1_2,Academic Flexibility,Academic Flexibility,1
+3,3,1_3,Curriculum Enrichment,Curriculum Enrichment,1
+4,4,1_4,Feedback System,Feedback System,1
+5,1,2_1,Student Enrolment and Profile,Student Enrolment and Profile,2
+6,2,2_2,Catering to Student Diversity,Catering to Student Diversity,2
+7,3,2_3,Teaching - Learning Process,Teaching - Learning Process,2
+8,4,2_4,Teacher Profile and Quality,Teacher Profile and Quality,2
+9,5,2_5,Evaluation Process and Reforms,Evaluation Process and Reforms,2
+10,6,2_6,Student Performance and Learning Outcomes,Student Performance and Learning Outcomes,2
+11,7,2_7,Student Satisfaction Survey,Student Satisfaction Survey,2
+12,1,3_1,Promotion of Research and Facilities,Promotion of Research and Facilities,3
+13,2,3_2,Resource Mobilization for Research,Resource Mobilization for Research,3
+14,3,3_3,Innovation Ecosystem,Innovation Ecosystem,3
+15,4,3_4,Research Publications and Awards,Research Publications and Awards,3
+16,5,3_5,Consultancy,Consultancy,3
+17,6,3_6,Extension Activities,Extension Activities,3
+18,7,3_7,Collaboration,Collaboration,3
+19,1,4_1,Physical Facilities,Physical Facilities,4
+20,2,4_2,Library as a Learning Resource,Library as a Learning Resource,4
+21,3,4_3,"Institution has an IT policy covering wi-fi, cyber","Institution has an IT policy covering wi-fi, cyber security, etc., and allocated budget for updating its IT facilities",4
+22,4,4_4,Maintenance of Campus Infrastructure,Maintenance of Campus Infrastructure,4
+23,1,5_1,Student Support,Student Support,5
+24,2,5_2,Student Progression,Student Progression,5
+25,3,5_3,Student Participation and Activities,Student Participation and Activities,5
+26,4,5_4,Alumni Engagement,Alumni Engagement,5
+27,1,6_1,Institutional Vision and Leadership,NULL,6
+28,2,6_2,Strategy Development and Deployment,NULL,6
+29,3,6_3,Faculty Empowerment Strategies,NULL,6
+30,4,6_4,Financial Management and Resource Mobilization,NULL,6
+31,5,6_5,Internal Quality Assurance System,NULL,6
+32,1,7_1,Institutional Values and Social Responsibilities,NULL,7
+33,2,7_2,Best Practices,NULL,7
+34,3,7_3,Institutional Distinctiveness,NULL,7

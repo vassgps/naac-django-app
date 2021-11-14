@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'proapp_assets/images/favicon.png' %}" />
+    <title>Welcome to VASS - NAAC Assistant Portal</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Manrope', sans-serif;
+        background-color: rgba(234, 234, 234, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: rgba(24, 37, 80, 1);
+        margin: 0;
+    }
+    
+    .wrapper {
+        max-width: 1100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wrapper .left-md {
+        flex: 1;
+        text-align: center;
+        position: relative;
+    }
+    
+    .wrapper .left-md::after {
+        content: "";
+        background-image: url(images/border.svg);
+    }
+    
+    .wrapper .left-md img {
+        max-width: 160px;
+    }
+    
+    .wrapper .left-md h1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    
+    .wrapper .right-md {
+        padding: 0 60px;
+        width: 40%;
+    }
+    
+    .wrapper .right-md h4 {
+        font-size: 24px;
+        line-height: 16px;
+        margin-top: 0;
+    }
+    
+    .wrapper .right-md .col-md {
+        padding: 15px 0;
+    }
+    
+    .wrapper .right-md input,
+    .wrapper .right-md select {
+        padding: 15px 10px;
+        border: 1px solid #2B2649;
+        width: 100%;
+        background-color: transparent;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .wrapper .right-md a {
+        font-size: 16px;
+        line-height: 16px;
+        color: rgba(176, 0, 0, 1);
+        font-weight: 600;
+        text-decoration: none !important;
+    }
+    
+    .wrapper .right-md span {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    
+    .wrapper .right-md button {
+        padding: 15px 10px;
+        background: rgba(60, 88, 184, 1);
+        color: #fff;
+        font-size: 16px;
+        width: 100%;
+        border: 1px solid #5C4FB0;
+        border-radius: 5px;
+    }
+</style>
+
+    <body>
+        <div class="wrapper">
+            <div class="left-md">
+                <img src="{% static 'proapp_assets/images/logo.svg' %}" alt="Naac Logo">
+                <h1>Welcome to VASS - NAAC<br>Assistant Portal</h1>
+            </div>
+            <div class="border">
+                <img src="{% static 'proapp_assets/images/border.svg' %}">
+             </div>
+                    <div class="right-md">
+                        <h4>Login</h4>
+
+                            <form method="post" action="/accounts/login/">
+								{% csrf_token %}
+<!--                                <div class="col-md">-->
+<!--                                    <select name="login" id="login">-->
+<!--                                        <option value="1">Admin</option>-->
+<!--                                        <option value="2">Staff</option>-->
+<!--                                        <option value="3">Teacher</option>-->
+<!--                                        <option value="4">Student</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
+                                <div class="col-md">
+                                    <input type="text" id="username" name="username" placeholder="Username">
+                                </div>
+                                <div class="col-md">
+                                    <input type="password" id="password" name="password" placeholder="Password">
+                                </div>
+
+                                <a href="/accounts/password_reset/">Forgot password?</a>
+
+                                <div class="col-md">
+                                    <button type="submit">Login</button>
+                                </div>
+                            </form>
+
+                        <span>Don't have an account yet? <a href="/user/register">Register</a></span>
+                    </div>
+            </div>
+
+    </body>
+
+</html>

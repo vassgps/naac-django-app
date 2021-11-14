@@ -1,0 +1,131 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+{% block body %}
+
+
+<!-- Main Content -->
+
+<div class="content container-fluid" xmlns="http://www.w3.org/1999/html">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="page-title">List Clubs and Forums Page</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">List All Clubs</a></li>
+                        <li class="breadcrumb-item active">Admin - Clubs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	 </div>
+
+      {% if messages %}
+        <div class="alert  alert-light alert-dismissible fade show" role="alert">
+        {% for message in messages %}
+        {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} {{ message }} </span>
+        {% endfor %}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+       </div>
+       {% endif %}
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card mb-0">
+				<div class="card-header">
+					<h4 class="card-title mb-0" id="crtitile">Clubs and Forums </h4>
+					<p class="card-text">
+						This is the list of Clubs and Forums registered .
+					</p>
+					 <a href="/programs/club/add"> <button type="button" class="btn btn-success">Add Club</button> </a>
+				</div>
+				<div class col-md4 style="padding: 20px; justify-content-center">
+
+   					 <form method="post" action="/programs/assign-club"  enctype="multipart/form-data">
+                      {% csrf_token %}
+                        <label for="clubs">Choose a club:</label>
+                          <select name="clubs" id="clubs">
+                            {% for club in clubs %}
+                            <option value="{{club.pk}}"> {{club.name}} </option>
+                             {% endfor %}
+                          </select>
+
+						 <label for="users">Choose a User:</label>
+                          <select name="users" id="users">
+                            {% for user in users %}
+                            <option value="{{user.pk}}">{{user.username}}</option>
+                             {% endfor %}
+                          </select>
+						  <button type="submit" class="btn btn-primary">Assign</button>
+                    </form>
+				</div>
+
+				<div class="card-body">
+
+					<div class="table-responsive">
+						<table class="datatable table table-stripped mb-0">
+							<thead>
+								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+									<th>SL</th>
+									<th>Name </th>
+									<th>Code</th>
+									<th>Description</th>
+									<th>Established On</th>
+									<th>Assigned To</th>
+									<th>Status</th>
+									<th>Change Status </th>
+									<th> Update </th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for club in clubs %}
+								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+									<td> {{forloop.counter}}  </td>
+									<td> {{club.name}} </td>
+									<td>{{club.code}}</td>
+									<td>{{club.description}}</td>
+									<td>{{club.established_at}}</td>
+										<td>{% for i in club.user.all %}
+										{{i.username}} </br>
+									    {% endfor %}
+									</td>
+									<td>  {% if club.status %}
+										<button type="button" class="btn btn-primary btn-sm">Active</button>
+											{% else %}
+										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+											{% endif %}
+									</td>
+									 {% if club.status %}
+									 <td>  <form method="post" action="/programs/club/disable/{{club.id}}" 
+									 	   onSubmit="return confirm('Do you want to Disable ?')" >
+										 {% csrf_token %}
+										 <button type="submit" class="btn btn-danger btn-sm">Disable </button>  </form> </td>
+									{% else %}
+									 <td>  <form method="post" action="/programs/club/approve/{{club.id}}">
+										 {% csrf_token %}
+										 <button type="submit" class="btn btn-success btn-sm"> Activate </button>
+									 </form> </td>
+									{% endif %}
+									 <td>  <form method="get" action="/programs/club/update/{{club.id}}">
+										 <button type="submit" class="btn btn-info btn-sm"> Update </button>
+										
+									 </form> </td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- End Main content-->
+
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{{ form.media }}
+<!-- Main Content -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Criteria Updating form : {{cr_data.criteria}} </h3>
+            </div>
+            <div class='col-md-10'>
+                    <div class="card-body">
+                        <h4> Update - {{cr_data.criteria}}: {{cr_data.final_title}} </h4>
+
+                        <p>
+                           {{cr_data.final_description}}
+                        </p>
+            </div>
+                  <div class="container">
+                                    <form method="post" id="C1_1_1Form"  enctype="multipart/form-data"
+                                          data-subject-url="{% url 'criterions:cr-ajax_load_subject' %}">
+                                      {% csrf_token %}
+                                        <div class="col-md-12">
+                                                <div class="row">
+                                                    {% for field in form  %}
+                                                      <div class="col-sm-4">
+                                                         <b style="display: flex; height:70px; margin-top:3px; align-items: flex-end; ">
+                                                            {{ field.label_tag }} </b> {{ field }}
+                                                      </div>
+                                                    {% endfor %}
+                                                </div>
+                                        </div>
+                                         <br>
+
+                                             <div class="row">
+                                           <div class="col-md-8">
+                                               <button type="submit" class="btn btn-primary">Update</button>
+                                               <a href="/criteria/detailed-view/{{cr_data.criteria_id}}/{{obj_id}}"  class="btn btn-warning">Cancel</a>
+                                           </div>
+                                         </div>
+                                    </form>
+                                    <div class='col-md-4' style="display: flex; align-items: flex-end; position: absolute;
+                                        right: 0; bottom: 5px;">
+                                        <form id = "form2"  method="post" action="/criteria/delete/{{cr_data.criteria_id}}/{{obj_id}}">
+                                            {% csrf_token %}
+
+                			            <input name="criteria_name" type="hidden" value="{{cr_data.criteria_id}}">
+                                             <input name="object_id" type="hidden" value="{{obj_id}}">
+                                             {% if user.user_scope == "NAAC_COD" or user.user_scope == "ADMIN" %}
+                                        <a href="/criteria/delete/{{cr_data.criteria_id}}/{{obj_id}}"  class="btn btn-danger" type="button"
+                                           onClick="return confirm('Are you sure you want to delete?')" > Delete </a>
+                                            {% else %} - {% endif %}
+                                        </form>
+                                     </div>
+                  </div>
+                  <br>
+             </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $("#id_program").change(function () {
+        const url = $("#C1_1_1Form").attr("data-subject-url");  // get the url of the `load_subject` view
+        const programId = $(this).val();  // get the selected program ID from the HTML input
+
+        $.ajax({                       // initialize an AJAX request
+            url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+            data: {
+                'program_id': programId       // add the Program id to the GET parameters
+            },
+            success: function (data) {   // `data` is the return of the `load_subject` view function
+                $("#id_paper").html(data);  // replace the contents of the subject input with the data that came from the server
+                /*
+
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (subject) {
+                    html_data += `<option value="${paper.id}">${paper.name}</option>`
+                });
+                console.log(html_data);
+                $("#id_paper").html(html_data);
+
+                */
+            }
+        });
+
+    });
+</script>
+<script>
+    submitForms = function(){
+    document.getElementById("deleteForm").submit();
+        }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- End Main content-->
+{% endblock %}

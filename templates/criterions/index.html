@@ -1,0 +1,176 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% block body %}
+{% load icon %}
+<!-- Main Content -->
+	 <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Dashboard</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+									<li class="breadcrumb-item active">User Home</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+	 </div>
+
+
+		<!-- Page Wrapper -->
+<!--            <div class="page-wrapper">-->
+
+				<!-- Page Content -->
+                <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome {{user.first_name}} {{user.last_name}} </h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Your Current Role is: {{user.user_scope}} -
+										&nbsp; Club Name: {{user.clubs}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					        {% if messages %}
+							<div class="alert  alert-light alert-dismissible fade show" role="alert">
+							{% for message in messages %} {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} 	{{ message }} </span> {% endfor %}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">×</span>
+							</button>
+							</div>
+							{% endif %}
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-drivers-license-o"></i>
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-1</h4>
+										<span> <a href="/criterions/show/1">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+							 {% icon "user-check" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-2</h4>
+										<span> <a href="/criterions/show/2">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										 {% icon "search" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-3</h4>
+										<span> <a href="/criterions/show/3">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										 {% icon "home" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-4</h4>
+										<span> <a href="/criterions/show/4">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										 {% icon "users" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-5</h4>
+										<span> <a href="/criterions/show/5">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										 {% icon "pocket" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-6</h4>
+										<span> <a href="/criterions/show/6">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										{% icon "trending-up" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION-7</h4>
+										<span> <a href="/criterions/show/7">View all assigned criterions </a> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        	<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon">
+										{% icon "plus-circle" class="css-class" height="50" width="50" %}
+                                    </span>
+									<div class="dash-widget-info">
+										<h4>CRITERION X</h4>
+										<span> View all assigned criterions </span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+            </div>
+			<!-- /Page Wrapper -->
+				</div>
+
+
+
+<!-- End Main content-->
+{% endblock %}

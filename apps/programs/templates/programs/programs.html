@@ -1,0 +1,106 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+{% block body %}
+
+
+<!-- Main Content -->
+
+<div class="content container-fluid" xmlns="http://www.w3.org/1999/html">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="page-title">List Programs Page</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">List All Programs</a></li>
+                        <li class="breadcrumb-item active">Admin - Programs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	 </div>
+
+      {% if messages %}
+        <div class="alert  alert-light alert-dismissible fade show" role="alert">
+        {% for message in messages %}
+        {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} {{ message }} </span>
+        {% endfor %}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+       </div>
+       {% endif %}
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card mb-0">
+				<div class="card-header">
+					<h4 class="card-title mb-0" id="crtitile">All Programs </h4>
+					<p class="card-text">
+						This is the list of Department registered .
+					</p>
+					 <a href="/programs/programs/add"> <button type="button" class="btn btn-success">Add Program</button> </a>
+				</div>
+				<div class="card-body">
+
+					<div class="table-responsive">
+						<table class="datatable table table-stripped mb-0">
+							<thead>
+								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+									<th>SL</th>
+									<th>Program</th>
+									<th>Department</th>
+									<th>Code</th>
+									<th>Description</th>
+									<th>Established On</th>
+									<th>Status</th>
+									<th>Change Status </th>
+									<th> Update </th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for prgm in programs %}
+								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+									<td> {{forloop.counter}}  </td>
+									<td> {{prgm.department}} </td>
+									<td> {{prgm.name}} </td>
+									<td>{{prgm.code}}</td>
+									<td>{{prgm.description}}</td>
+									<td>{{prgm.established_at}}</td>
+									<td>  {% if prgm.status %}
+										<button type="button" class="btn btn-primary btn-sm">Active</button>
+											{% else %}
+										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+											{% endif %}
+									</td>
+									 {% if prgm.status %}
+									 <td>  <form method="post" action="/programs/programs/disable/{{prgm.id}}"
+									 	     onSubmit="return confirm('Do you want to Disable ?')" >
+										 {% csrf_token %}
+										 <button type="submit" class="btn btn-danger btn-sm">Disable </button>  </form> </td>
+									{% else %}
+									 <td>  <form method="post" action="/programs/programs/approve/{{prgm.id}}">
+										 {% csrf_token %}
+										 <button type="submit" class="btn btn-success btn-sm"> Activate </button>
+									 </form> </td>
+									{% endif %}
+									 <td>  <form method="get" action="/programs/programs/update/{{prgm.id}}">
+										 <button type="submit" class="btn btn-info btn-sm"> Update </button>
+									 </form> </td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- End Main content-->
+
+
+{% endblock %}

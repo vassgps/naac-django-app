@@ -1,0 +1,32 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Date  </th>  <th>  Department  </th>  <th> Value Added Course Introduced   </th>  <th> Course code   </th>  <th> Year of Implementation   </th>  <th> Number of Contact Hours  </th>  <th> Faculty Incharge   </th>  <th> Activities   </th>  <th> Agency with Contact details   </th>  <th> External resource person   </th>  <th> Number of Students Registration   </th>  <th> Number of students completed the course   </th>  <th> Number of times the course offered /year   </th>  <th> Year of Discontinuation   </th>  <th> Date of BOS Meeting   </th>  <th> Date of Governing Body  </th>  <th> Date of Academic Council   </th>  <th> Outcome  </th>  <th> Brochure or any other document relating to value added courses  </th>  <th> List of value added courses (Data Template)  </th>  <th> Additional Info files  </th>  <th> Additional info Links  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.department }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text2 }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text7 }} </td>  <td> {{obj.text8 }} </td>  <td> {{obj.text9 }} </td>  <td> {{obj.text10 }} </td>  <td> {{obj.text11 }} </td>  <td> {{obj.text12 }} </td>  <td> {{obj.text13 }} </td>  <td> {{obj.date2 }} </td>  <td> {{obj.date3 }} </td>  <td> {{obj.date4 }} </td>  <td> {{obj.text14 }} </td> <td> {% if obj.file1 %} {{obj.file2.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file3.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Date  </th>  <th>  Department  </th>  <th> Value Added Course Introduced   </th>  <th> Course code   </th>  <th> Year of Implementation   </th>  <th> Number of Contact Hours  </th>  <th> Faculty Incharge   </th>  <th> Activities   </th>  <th> Agency with Contact details   </th>  <th> External resource person   </th>  <th> Number of Students Registration   </th>  <th> Number of students completed the course   </th>  <th> Number of times the course offered /year   </th>  <th> Year of Discontinuation   </th>  <th> Date of BOS Meeting   </th>  <th> Date of Governing Body  </th>  <th> Date of Academic Council   </th>  <th> Outcome  </th>  <th> Brochure or any other document relating to value added courses  </th>  <th> List of value added courses (Data Template)  </th>  <th> Additional Info files  </th>  <th> Additional info Links  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

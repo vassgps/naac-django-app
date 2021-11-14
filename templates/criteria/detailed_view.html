@@ -1,0 +1,107 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+{% block body %}
+{% load table_values %}
+           <br>
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10">
+                <div class="card mb-0" style="margin-bottom:45px !important;">
+                    <div class="card-header">
+                        <h2> Detailed View </h2>
+
+                        <div class="table-responsive">
+                            <table class="table table-stripped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th> Type </th>
+                                            <th> Value </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <td> System ID </td>
+                                    <td> {{obj.id}} </td>
+
+                                    {% block data_content %}
+
+                                    {% endblock %}
+                                    <tr>
+                                        <td> User </td>
+                                        <td> {{obj.user}} </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Status </td>
+                                        <td> {{obj.status}} </td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                            <br>
+<!--                        Displaying Buttons and footers-->
+                                <div class="col-md-8" style="display: flex; gap: 20px;">
+
+                                 {% if user.user_scope == "NAAC_COD" or user.user_scope == "ADMIN" %}
+
+                                        {% if obj.status == "APPROVED" %}
+
+                                            <a href="/criteria/edit/{{obj.criterion}}/{{obj.id}}">
+                                            <button type="submit" class="btn btn-info btn"> Edit </button>
+                                            </a>
+
+                                        {% elif obj.status == "PENDING" or obj.status == "VERIFIED" %}
+
+                                        <a href="/criteria/approve/{{obj.criterion}}/{{obj.id}}">
+                                        <button type="submit" class="btn btn-success btn">
+                                            Approve </button>  </a>
+
+                                        <a href="/criteria/revert/{{obj.criterion}}/{{obj.id}}">
+                                        <button type="submit" class="btn btn-danger btn"> Revert </button>  </a>
+
+                                        {% else %}   <button type="submit" class="btn btn-outline-secondary" disabled> DONE
+                                            </button> {% endif %}
+
+                                 {% elif user.user_scope == "DEPT_COD" %}
+                                        	{% if obj.status == "PENDING" %}
+                                                <a href="/criteria/approve/{{obj.criterion}}/{{obj.id}}">
+                                                <button type="submit" class="btn btn-success btn">
+                                                    Verify  </button>  </a>
+
+                                                <a href="/criteria/revert/{{obj.criterion}}/{{obj.id}}">
+                                                <button type="submit" class="btn btn-danger btn"> Revert </button>
+                                                </a>
+                                               {% else %} <button type="submit" class="btn btn-outline-secondary" disabled> DONE
+                                            </button> {% endif %}
+
+                                {% else %}
+                                        {% if obj.user == request.user %}
+
+                                            {% if obj.status == "PENDING" or obj.status == "REVERTED"  %}
+                                            <a href="/criteria/edit/{{obj.criterion}}/{{obj.id}}">
+                                            <button type="submit" class="btn btn-danger btn"> Edit </button> </a>
+                                            {% else %} <button type="submit" class="btn btn-outline-secondary" disabled> DONE </button>
+                                            {% endif %}
+
+                                        {% else %} <button type="submit" class="btn btn-outline-secondary" disabled> NOT ALLOWED
+                                            </button> {% endif %}
+
+                                {% endif %}
+                                            <a href="/criteria/show/{{obj.criterion}}">
+                                           <button type="submit" class="btn btn-warning" style="color:#fff;"> Go Back </button>
+                                            </a>
+                                    {% if user.user_scope == "NAAC_COD" or user.user_scope == "ADMIN" %}
+                                         <a href="/criteria/delete/{{obj.pk}}">
+                                           <button type="submit" class="btn btn-danger" style="color:#fff;"
+                                                   onclick="return confirm('Are you sure want to delete ?');"> Delete </button>
+                                            </a>
+                                     {% endif %}
+
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+
+                    {% extends 'criteria/detailed_view.html' %} {% load static %}
+                    {% block data_content %}
+            
+                      
+                        <tr>
+                            <td> Year </td>
+                            <td> {{obj.date }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Title of paper </td>
+                            <td> {{obj.text1 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the author/s </td>
+                            <td> {{obj.text2 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Department of the teacher </td>
+                            <td> {{obj.department }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Designation  </td>
+                            <td> {{obj.text4 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of journal </td>
+                            <td> {{obj.text5 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> National/International </td>
+                            <td> {{obj.text6 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Year of publication </td>
+                            <td> {{obj.text8 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Average Impact Factor, if any </td>
+                            <td> {{obj.text9 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> ISS0 Number </td>
+                            <td> {{obj.text10 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> UGC listed or not </td>
+                            <td> {{obj.text11 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Name of the supporting documents attached* </td>
+                            <td> {{obj.text12 }} </td> 
+                        </tr>    
+                         
+                        <tr>
+                            <td> Journal Link  </td>
+                            <td> {{obj.text13 }} </td> 
+                        </tr>    
+                        
+                              <tr>
+                                <td> Document </td>
+                                <td> {% if obj.file2 %}
+                                <a href="{{obj.file2.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                            
+                              <tr>
+                                <td> Additional Information Files </td>
+                                <td> {% if obj.file1 %}
+                                <a href="{{obj.file1.url}}" target="_blank"> View </a>
+                                 {% else %} No Files {% endif %} </td> 
+                              </tr>   
+                             
+                        <tr>
+                            <td> Additional Info Link </td>
+                            <td> {{obj.url1 }} </td> 
+                        </tr>    
+                        
+                    
+                   {% endblock %}
+                    

@@ -1,0 +1,34 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Date  </th>  <th>  Department  </th>  <th> Name of the Course   </th>  <th> Course Code   </th>  <th> Type of course   </th>  <th>  Program  </th>  <th> Focus of the activity   </th>  <th> Year of Introduction   </th>  <th> Beneficiaries   </th>  <th> Date of BOS Meeting   </th>  <th> Date of Academic Council   </th>  <th> MOU with Organizations   </th>  <th> Impact / Outcome   </th>  <th> Programme / Curriculum/ Syllabus of the courses  </th>  <th>  Minutes of the Boards of Studies/ Academic Council meetings with approvals for these courses  </th>  <th> MoUs with relevant organizations for these courses, if any  </th>  <th> Average percentage of courses having focus on employability/ entrepreneurship(Data Template)  </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.department }} </td>  <td> {{obj.paper }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text2 }} </td>  <td> {{obj.program }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.date2 }} </td>  <td> {{obj.date3 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text7 }} </td> <td> {% if obj.file1 %} {{obj.file2.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file3.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file4.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file5.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Date  </th>  <th>  Department  </th>  <th> Name of the Course   </th>  <th> Course Code   </th>  <th> Type of course   </th>  <th>  Program  </th>  <th> Focus of the activity   </th>  <th> Year of Introduction   </th>  <th> Beneficiaries   </th>  <th> Date of BOS Meeting   </th>  <th> Date of Academic Council   </th>  <th> MOU with Organizations   </th>  <th> Impact / Outcome   </th>  <th> Programme / Curriculum/ Syllabus of the courses  </th>  <th>  Minutes of the Boards of Studies/ Academic Council meetings with approvals for these courses  </th>  <th> MoUs with relevant organizations for these courses, if any  </th>  <th> Average percentage of courses having focus on employability/ entrepreneurship(Data Template)  </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

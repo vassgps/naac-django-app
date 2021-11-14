@@ -1,0 +1,190 @@
+id,date,criterion,cr_index,date2,date3,date4,date5,date6,url1,url2,file1,file2,file3,file4,file5,text1,text2,text3,text4,text5,text6,text7,text8,text9,text10,text11,text12,text13,text14,text15,text16,text17,text18,text19,text20,text21,text22,text23,text24,created_at,status,is_active,is_deleted,jdoc,batch_id,club_id,criteria_manager_id,department_id,final_criteria_id,paper_id,program_id,user_id
+1,2021-09-29,c1_1_1,1,,,,,,https://www.google.com/,,cr_file1/nature.jpg,"","","","","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",,,,,,,,,,,,,,,,,,,2021-10-28 22:27:34.2321+05:30,VERIFIED,f,f,"'"{}'"",2,,,,1,226,2,3
+3,2021-10-27,c1_1_1,1,,,,,,https://www.google.com/,,cr_file1/nature_nt8binA.jpg,"","","","","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string","Optional. The position (up to, but not including) where to end the extraction. If omitted, slice() selects all characters from the start-position to the end of the string",,,,,,,,,,,,,,,,,,,2021-10-30 22:32:13.074735+05:30,APPROVED,f,f,"'"{}'"",2,,,,1,395,7,3
+2,2021-10-19,c1_1_1,1,,,,,,,,"","","","","","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","aaaaaaaaaaaaaa
+
+rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",,,,,,,,,,,,,,,,,,,2021-10-28 22:28:29.783716+05:30,REVERTED,f,f,"'"\'"\\\'"\\\\\\\'"\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"{}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"\\\\\\\\\\\\\\\'"\\\\\\\'"\\\'"\'"'"",2,,,,1,120,15,3
+6,2021-10-27,c1_1_1,1,,,,,,,,"","","","","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and","","","","","","","","","","","","","","","","","","",2021-10-31 07:16:22.487277+05:30,REVERTED,f,t,"'"\'"\\\'"\\\\\\\'"{}\\\\\\\'"\\\'"\'"'"",3,,,,1,468,21,22
+7,2021-10-26,c1_1_1,1,,,,,,,,"","","","","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","","","","","","","","","","","","","","","","","",2021-10-31 07:16:52.619222+05:30,OTHER,f,t,"'"\'"\\\'"\\\\\\\'"{}\\\\\\\'"\\\'"\'"'"",6,,,,1,478,21,22
+4,2021-09-27,c1_1_1,1,,,,,,https://www.google.com/,,cr_file1/nature_8ubdlPc.jpg,"","","","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","","","","","","","","","","","","","","","","","",2021-10-31 07:14:36.043123+05:30,PENDING,f,f,"'"\'"{}\'"'"",2,,,,1,210,2,22
+11,2021-11-03,c1_1_1,1,,,,,,https://www.google.com/,,cr_file1/nature_irCghJ1.jpg,"","","","","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management",,,,,,,,,,,,,,,,,,,2021-11-08 15:01:08.754564+05:30,APPROVED,f,f,"'"{}'"",1,,,,1,317,3,3
+5,2021-10-12,c1_1_1,1,,,,,,,,"","","","","","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has","","","","","","","","","","","","","","","","","","",2021-10-31 07:15:00.706703+05:30,PENDING,f,f,"'"\'"\\\'"{}\\\'"\'"'"",2,,,,1,467,21,22
+8,2021-11-09,c2_7_1,2,,,,,,https://www.google.com/,,cr_file1/nature_9tXB7pQ.jpg,"","","","",s4,Anand,Male,General,Kerala,India,,anand@in.com,,FGG6734FF,963456678,32476578654567,2018,,,,,,,,,,,,2021-11-06 18:55:35.995+05:30,APPROVED,f,f,"'"{}'"",,,,,35,,1,3
+9,,c2_1_3,,,,,,,,,"","","","","",,,,,,,,,,,,,,,,,,,,,,,,,2021-11-08 12:52:48.158259+05:30,OTHER,f,t,"'"{\'"reserved_sc\'": \'"3\'", \'"reserved_st\'": \'"6\'"}'"",,,,,,,,1
+10,2021-09-02,c2_1_3,2,,,,,,,,"","","","","","","Reserved for SC - 23 
+                    Reserved for ST - 323
+                    Reserved for Community - 3
+                    Reserved for General - 23
+                    Reserved for PH - 23
+                    Reserved for Sports - 23
+                    Reserved for Management - 23
+                    Reserved for Others - 23","Admitted from SC - 4
+                    Admitted from ST - 43
+                    Admitted from Community - 324
+                    Admitted from General - 32
+                    Admitted from PH - 232
+                    Admitted from Sports - 24
+                    Admitted from Management - 232
+                    Admitted from Others - 32","","","","","","","","","","","","","","","","","","","","","",2021-11-08 13:50:15.732993+05:30,PENDING,f,f,{},,,,,,,,3
+12,2021-11-02,c1_1_1,1,,,,,,,,"","","","","","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management","COs COURSE OUTCOMES
+CO1 To understand the principles behind qualitative and Gravimetric analysis
+CO2 To understand basic processes of metallurgy and to analyse the merit of different alloys
+CO3 To understand the applications of different inorganic polymers
+CO4 To analyse different polluting agents
+CO5 To apply the principles of solid waste management",,,,,,,,,,,,,,,,,,,2021-11-08 15:01:26.637054+05:30,PENDING,f,f,{},3,,,,1,211,2,3
+17,2021-11-03,c1_3_4,1,,,,,,,,"","","","","",BSCHE,sa,sa,"","","","","",,,,,,,,,,,,,,,,,2021-11-13 12:56:19.623959+05:30,PENDING,f,f,{},,,,3,9,,5,3
+13,2021-11-01,c2_1_3,2,,,,,,,,"","","","","",,"
+                    Reserved for SC - 1
+                    Reserved for ST - 3
+                    Reserved for Community - 5
+                    Reserved for General - 7
+                    Reserved for PH - 9
+                    Reserved for Sports - 11
+                    Reserved for Management - 13
+                    Reserved for Others - 15
+                    ","
+                    Admitted from SC - 2
+                    Admitted from ST - 4
+                    Admitted from Community - 6
+                    Admitted from General - 8
+                    Admitted from PH - 10
+                    Admitted from Sports - 12
+                    Admitted from Management - 14
+                    Admitted from Others - 16
+                    ","
+                   Reserved for SC - 17
+                   Reserved for ST - 19
+                   Reserved for Community - 21
+                   Reserved for General - 23
+                   Reserved for PH - 25
+                   Reserved for Sports - 27
+                   Reserved for Management - 29
+                   Reserved for ET - 31
+                   Reserved for LC - 35
+                   Reserved for OBX - 37
+                   Reserved for OBH - 39
+                   Reserved for Muslim - 33
+                   Reserved for Others - 41
+                   ","
+                    Admitted from SC - 18
+                    Admitted from ST - 20
+                    Admitted from Community - 22
+                    Admitted from General - 24
+                    Admitted from PH - 26
+                    Admitted from Sports - 28
+                    Admitted from Management - 30
+                    Admitted from ET - 32
+                    Admitted from LC - 36
+                    Admitted from OBX - 38
+                    Admitted from OBH - 40
+                    Admitted from Muslim - 34
+                    Admitted from Others - 42
+                    ",,,,,,,,,,,,,,,,,,,,2021-11-13 07:07:44.530563+05:30,OTHER,f,t,"'"\'"{}\'"'"",,,,,,,,3
+14,2021-11-03,c1_2_2,1,,,,,,,,"","","","","",CBCS,czc,"","",,,,,,,,,,,,,,,,,,,,,2021-11-13 12:41:25.981079+05:30,PENDING,f,f,{},,,,,5,,1,3
+15,2021-11-03,c1_2_2,1,,,,,,,,"","","","","",CBCS,czc,"","",,,,,,,,,,,,,,,,,,,,,2021-11-13 12:43:56.021782+05:30,PENDING,f,f,{},,,,,5,,1,3
+16,2021-11-02,c1_3_4,1,,,,,,,,"","","","","",asa,asa,asa,sa,"","","","",,,,,,,,,,,,,,,,,2021-11-13 12:53:33.289546+05:30,PENDING,f,f,{},,,,14,9,,1,3
+18,2021-11-09,c1_3_4,1,,,,,,,,"","","","","",,anand,anand,"","","","","",,,,,,,,,,,,,,,,,2021-11-13 12:57:09.042275+05:30,PENDING,f,f,{},,,,14,9,,11,3
+19,2021-11-02,c1_3_4,1,,,,,,,,"","","","","",BSPHY,anand,anand,"","","","","",,,,,,,,,,,,,,,,,2021-11-13 12:57:43.358277+05:30,PENDING,f,f,{},,,,14,9,,4,3
+20,2021-11-03,c2_6_3,2,,,,,,,,"","","","","",BSMAT,,s5,3,3,3,,4,4,"",34,43,,,,,,,,,,,,,2021-11-13 15:03:21.135235+05:30,APPROVED,f,f,"'"{}'"",,,,,34,,3,3
+21,2021-11-10,c1_1_3,1,,,,,,,,"","","","","",GECO6E16T,dadw,Entrepreneurship,234,sdfs,sad,"",,,,,,,,,,,,,,,,,,2021-11-13 15:27:44.200445+05:30,PENDING,f,f,{},,,,3,3,232,2,3

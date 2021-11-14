@@ -1,0 +1,20 @@
+id,name,code,description,status,established_at,created_at
+1,Botany,DP01,Botany,t,2021-08-13,2021-08-13 10:32:15.298773+05:30
+2,Business Management,DP02,Business Management,t,2021-08-13,2021-08-13 10:32:49.651076+05:30
+3,Chemistry,DP03,Chemistry,t,2021-08-13,2021-08-13 10:33:05.810427+05:30
+4,Commerce,DP04,Commerce,t,2021-08-13,2021-08-13 10:33:25.947092+05:30
+5,Commerce and Management,BT05,Commerce and Management,t,2021-08-13,2021-08-13 10:34:44.534245+05:30
+6,Computer Science,BT06,Computer Science,t,2021-08-13,2021-08-13 10:35:02.606471+05:30
+7,Economics,BT07,Economics,t,2021-08-13,2021-08-13 10:35:19.07137+05:30
+8,English,DP08,English,t,2021-08-13,2021-08-13 10:35:48.046996+05:30
+9,Language and Literature,DP09,Language and Literature,t,2021-08-13,2021-08-13 10:36:05.286828+05:30
+10,Malayalam,DP10,Malayalam,t,2021-08-13,2021-08-13 10:36:21.698705+05:30
+11,Mathematics,DP11,Mathematics,t,2021-08-13,2021-08-13 10:36:38.304757+05:30
+12,Media Studies,DP12,Media Studies,t,2021-08-13,2021-08-13 10:36:58.941965+05:30
+13,Physics,DP13,Physics,t,2021-08-13,2021-08-13 10:37:11.866419+05:30
+14,Psychology,DP14,Psychology,t,2021-08-13,2021-08-13 10:37:26.916282+05:30
+15,Social Work,DP15,Social Work,t,2021-08-13,2021-08-13 10:37:47.426965+05:30
+16,Statistics,DP16,Statistics,t,2021-08-13,2021-08-13 10:38:07.464026+05:30
+17,Zoology,DP17,Zoology,t,2021-08-13,2021-08-13 10:38:37.436725+05:30
+18,GENERAL,DP00,General Administration,t,2021-08-13,2021-08-13 11:19:16.973828+05:30
+19,OTHER,DP19,Some Common Department,t,2021-10-12,2021-10-12 07:49:20.300022+05:30

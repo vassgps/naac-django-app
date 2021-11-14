@@ -1,0 +1,30 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Year   </th>  <th> Semester  </th>  <th> Program Name  </th>  <th> Program Code  </th>  <th> No. of Students appeared in the final year examination  </th>  <th> No. of Students Passed  </th>  <th> Pass Percentage  </th>  <th> Above 90%  </th>  <th> 80% -90%  </th>  <th> 70% - 80%  </th>  <th> 60% - 70%  </th>  <th> 50% - 60 %  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.program }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text8 }} </td>  <td> {{obj.text9 }} </td>  <td> {{obj.text10 }} </td>  <td> {{obj.text11 }} </td>  <td> {{obj.text12 }} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Year   </th>  <th> Semester  </th>  <th> Program Name  </th>  <th> Program Code  </th>  <th> No. of Students appeared in the final year examination  </th>  <th> No. of Students Passed  </th>  <th> Pass Percentage  </th>  <th> Above 90%  </th>  <th> 80% -90%  </th>  <th> 70% - 80%  </th>  <th> 60% - 70%  </th>  <th> 50% - 60 %  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

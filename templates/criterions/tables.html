@@ -1,0 +1,126 @@
+{% extends 'user/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% block body %}
+{% load icon %}
+<!-- Main Content -->
+	 <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Criterion Summury</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">All Criterions</a></li>
+									<li class="breadcrumb-item active">
+										Criterion: {{criteria}} </li>
+								</ul>
+						</div>
+					</div>
+
+				 </div>
+
+                <div class="content container-fluid">
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome {{user.first_name}} {{user.last_name}} </h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Your Current Role is: {{user.user_scope}} -
+										&nbsp; Club Name: {{user.clubs}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					        {% if messages %}
+							<div class="alert  alert-light alert-dismissible fade show" role="alert">
+							{% for message in messages %} {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} 	{{ message }} </span> {% endfor %}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">×</span>
+							</button>
+							</div>
+							{% endif %}
+					<div class="row">
+
+			<!-- /Page Wrapper -->
+
+		<!--  Pagination Manu items 		 -->
+		 			<div class="row-menu-items">
+
+	  							 <ul class="pagination">
+									 Jump to : &nbsp;
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">«</span>
+												<span class="sr-only">Previous</span>
+											</a>
+										</li>
+
+									 <li class="page-item"><a class="page-link" href="/criterions/show/1">1 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/2">2 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/3">3 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/4">4 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/5">5 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/6">6 </a></li>
+									 <li class="page-item"><a class="page-link" href="/criterions/show/7">7 </a></li>
+
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">»</span>
+											<span class="sr-only">Next</span>
+											</a>
+										</li>
+									</ul>
+				   				</div>
+ 				    </div>
+				</div>
+      </div>
+
+<!--  Pagination Manu items 		 -->
+
+ <div class="row">
+
+	  <div class="col-lg-6">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title mb-0">Criterion Summury</h4>
+				</div>
+
+				<div class="card-body">
+					<div class="table-responsive">
+						<table class="table table-bordered mb-0">
+							<thead>
+								<tr>
+									<th>SL</th>
+									<th>Criterion ID</th>
+									<th>View </th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for obj in objects %}
+								<tr>
+									<td>{{forloop.counter}}</td>
+									<td>{{obj.criteria}}</td>
+									<td>
+								  <a href= "/criteria/{{obj.criteria_id}}" class="btn btn-primary">
+									View: {{obj.criteria}} </a>
+									</td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+ </div>
+
+<!-- End Main content-->
+{% endblock %}

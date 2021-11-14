@@ -1,0 +1,31 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Date  </th>  <th>  Department  </th>  <th> Value Added Course introduced  </th>  <th> Year of Implementation  </th>  <th> Course code  </th>  <th> Number of Contact Hours  </th>  <th> Faculty Charge  </th>  <th> Activities  </th>  <th> External Resource Person  </th>  <th> Number of Students Registration  </th>  <th> Number of students Completed the course  </th>  <th> Number of times Course Offered per year   </th>  <th> Year of Discontinuation of the Course  </th>  <th> Outcome  </th>  <th> List of students enrolled  </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.department }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.text2 }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text7 }} </td>  <td> {{obj.text8 }} </td>  <td> {{obj.text9 }} </td>  <td> {{obj.text10 }} </td>  <td> {{obj.text11 }} </td>  <td> {{obj.text12 }} </td> <td> {% if obj.file1 %} {{obj.file2.url}}
+                             {% else %} No Files {% endif %} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Date  </th>  <th>  Department  </th>  <th> Value Added Course introduced  </th>  <th> Year of Implementation  </th>  <th> Course code  </th>  <th> Number of Contact Hours  </th>  <th> Faculty Charge  </th>  <th> Activities  </th>  <th> External Resource Person  </th>  <th> Number of Students Registration  </th>  <th> Number of students Completed the course  </th>  <th> Number of times Course Offered per year   </th>  <th> Year of Discontinuation of the Course  </th>  <th> Outcome  </th>  <th> List of students enrolled  </th>  <th>  Additional Info files  </th>  <th> Additional info Links  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

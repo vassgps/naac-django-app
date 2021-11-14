@@ -1,0 +1,73 @@
+{% extends 'user/base.html' %}
+{% load static %} {% block title %} NAAC Assistant {% endblock %}
+
+{% block body %}
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
+	 <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"> </script>
+     <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"> </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"> </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"> </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"> </script>
+     <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"> </script>
+     <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"> </script>
+
+        <script type="text/javascript">
+             $(document).ready(function() {
+                $('#example').DataTable( {
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                } );
+            } );
+        </script>
+        <div class="row">
+            <div class="card mb-0">
+				<div class="card-header">
+                    <br>
+                    <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td>{{forloop.counter}}</td>
+                            <td>{{ obj.date }} </td>
+                            <td>{{ obj.text1 }} </td>
+                            <td>{{ obj.department }} </td>
+                            <td>{{ obj.url1 }} </td>
+                             <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>SL</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                </div>
+                </div>
+
+        </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+ 
+                {% extends 'criteria/reports/report_home.html' %}
+                {% block table %}
+                
+                <table id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th> SL  </th>
+                             <th> Year  </th>  <th> Name of the PhD scholar  </th>  <th> Name of the Department  </th>  <th> Name of the guide/s  </th>  <th> Title of the thesis  </th>  <th> Year of registration of the scholar  </th>  <th> Year of award of PhD  </th>  <th> Name of the supporting documents attached*  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                        </tr>
+                
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td> {{forloop.counter}} </td>
+                              <td> {{obj.date }} </td>  <td> {{obj.text1 }} </td>  <td> {{obj.department }} </td>  <td> {{obj.text3 }} </td>  <td> {{obj.text4 }} </td>  <td> {{obj.text5 }} </td>  <td> {{obj.text6 }} </td>  <td> {{obj.text8 }} </td> <td> {% if obj.file1 %} {{obj.file1.url}}
+                             {% else %} No Files {% endif %} </td>  <td> {{obj.url1 }} </td> 
+                        </tr>
+                     {% endfor %}
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                  <th> Year  </th>  <th> Name of the PhD scholar  </th>  <th> Name of the Department  </th>  <th> Name of the guide/s  </th>  <th> Title of the thesis  </th>  <th> Year of registration of the scholar  </th>  <th> Year of award of PhD  </th>  <th> Name of the supporting documents attached*  </th>  <th> Additional Information Files  </th>  <th> Additional Info Link  </th> 
+                            </tr>
+                        </tfoot>
+                    </table>
+               {% endblock %}
+
+        

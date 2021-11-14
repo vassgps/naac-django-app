@@ -1,0 +1,836 @@
+{% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
+
+<!------ Include the above in your HEAD tag ---------->
+
+{% block body %}
+<!-- Main Content -->
+	 <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Dashboard</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+									<li class="breadcrumb-item active">User Home</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+	 </div>
+
+
+		<!-- Page Wrapper -->
+<!--            <div class="page-wrapper">-->
+
+				<!-- Page Content -->
+                <div class="content container-fluid">
+
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome {{user.first_name}} {{user.last_name}} </h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Your Current Role is: {{user.user_scope}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					        {% if messages %}
+							<div class="alert  alert-light alert-dismissible fade show" role="alert">
+							{% for message in messages %} {% if message.tags %} <span class="{{ message.tags }}">  {% endif %} 	{{ message }} </span> {% endfor %}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">×</span>
+							</button>
+							</div>
+							{% endif %}
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{total_users}}</h3>
+										<span>Users</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-inr"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{total_revenue}}</h3>
+										<span>Total revenue</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{today_revenue}}</h3>
+										<span>Todays Income</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+									<div class="dash-widget-info">
+										<h3>{{joined_today}}</h3>
+										<span>Signup Today</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<!--					Solid Tabs Menu-->
+					<div class="row">
+							<div class="col-md-10">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title"> Report Generation</h4>
+										<ul class="nav nav-tabs nav-tabs-solid">
+											<li class="nav-item"><a class="nav-link active" href="#solid-tab1" data-toggle="tab"> Criterion 1</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab2" data-toggle="tab">Criterion 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab3" data-toggle="tab">Criterion 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab4" data-toggle="tab">Criterion 4</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab5" data-toggle="tab">Criterion 5</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab6" data-toggle="tab">Criterion 6</a></li>
+											<li class="nav-item"><a class="nav-link" href="#solid-tab7" data-toggle="tab">Criterion 7</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane show active" id="solid-tab1">
+												      <div class="table-responsive col-md-6">
+														  	  <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c1_1_1/adv-reprts">C1.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c1_1_2/adv-reprts">C1.1.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c1_1_3/adv-reprts">C1.1.3 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_2_1/adv-reprts">C1.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_2_2/adv-reprts">C1.2.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_3_1/adv-reprts">C1.3.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_3_2/adv-reprts">C1.3.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_3_3/adv-reprts">C1.3.3 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_3_4/adv-reprts">C1.3.4 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_4_1/adv-reprts">C1.4.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c1_4_2/adv-reprts">C1.4.2 </a> </td>
+
+																   </tr>
+															  </tbody>
+														  </table>
+													  </div>
+											</div>
+											<div class="tab-pane" id="solid-tab2">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c2_1_1/adv-reprts">c2.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_1_2/adv-reprts">c2.1.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_1_3/adv-reprts">c2.1.3 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_2_1/adv-reprts">c2.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_2_2/adv-reprts">c2.2.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c2_2_3/adv-reprts">c2.2.3 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c2_3_1/adv-reprts">c2.3.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_3_2/adv-reprts">c2.3.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_3_3/adv-reprts">c2.3.3 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_3_4/adv-reprts">c2.3.4 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_4_1/adv-reprts">c2.4.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c2_4_2/adv-reprts">c2.4.2 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c2_4_3/adv-reprts">c2.4.3 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_4_4/adv-reprts">c2.4.4 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_4_5/adv-reprts">c2.4.5 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_5_1/adv-reprts">c2.5.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_5_2/adv-reprts">c2.5.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_5_3/adv-reprts">c2.5.3 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_5_4/adv-reprts">c2.5.4 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_5_5/adv-reprts">c2.5.5 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_6_1/adv-reprts">c2.6.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_6_2/adv-reprts">c2.6.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_6_3/adv-reprts">c2.6.3 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c2_7_1/adv-reprts">c2.7.1 </a> </td>
+
+																  </tr>
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab3">
+												<div class="table-responsive col-md-6">
+												 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c3_1_1/adv-reprts">c3.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_1_2/adv-reprts">c3.1.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_1_3/adv-reprts">c3.1.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c3_1_4/adv-reprts">c3.1.4 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c3_2_1/adv-reprts">c3.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c3_2_2/adv-reprts">c3.2.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c3_2_3/adv-reprts">c3.2.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c3_2_4/adv-reprts">c3.2.4 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c3_3_1/adv-reprts">c3.3.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c3_3_2/adv-reprts">c3.3.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c3_3_3/adv-reprts">c3.3.3 </a> </td>
+
+																   </tr>
+
+																		<tr>
+																	<td> <a href="/criteria/c3_4_1/adv-reprts">c3.4.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c3_4_2/adv-reprts">c3.4.2 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c3_4_3/adv-reprts">c3.4.3 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_4_4/adv-reprts">c3.4.4 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_4_5/adv-reprts">c3.4.5 </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c3_4_6/adv-reprts">c3.4.6 </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_4_7/adv-reprts">c3.4.7 </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_4_8/adv-reprts">c3.4.8 </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_5_1/adv-reprts">c3.5.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_5_2/adv-reprts">c3.5.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_5_3/adv-reprts">c3.5.3 </a> </td>
+
+																  </tr>
+
+																   <tr>
+																	<td> <a href="/criteria/c3_6_1/adv-reprts">c3.6.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_6_2/adv-reprts">c3.6.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_6_3/adv-reprts">c3.6.3 </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c3_6_4/adv-reprts">c3.6.4 </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_7_1/adv-reprts">c3.7.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_7_2/adv-reprts">c3.7.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c3_7_3/adv-reprts">c3.7.3 </a> </td>
+
+																  </tr>
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab4">
+												      <div class="table-responsive col-md-6">
+														 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c4_1_1/adv-reprts">c4.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c4_1_2/adv-reprts">c4.1.2 </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_1_2A/adv-reprts">c4.1.2A </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_1_2B/adv-reprts">c4.1.2B </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_1_2C/adv-reprts">c4.1.2C </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_1_2D/adv-reprts">c4.1.2D </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_1_2E/adv-reprts">c4.1.2E </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c4_1_3/adv-reprts">c4.1.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c4_1_4/adv-reprts">c4.1.4 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c4_2_1/adv-reprts">c4.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c4_2_2/adv-reprts">c4.2.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c4_2_3/adv-reprts">c4.2.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c4_2_4/adv-reprts">c4.2.4 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_2_5/adv-reprts">c4.2.5 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c4_2_6/adv-reprts">c4.2.6 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c4_3_1/adv-reprts">c4.3.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c4_3_2/adv-reprts">c4.3.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c4_3_3/adv-reprts">c4.3.3 </a> </td>
+
+																   </tr>
+
+																   		<tr>
+																	<td> <a href="/criteria/c4_3_4/adv-reprts">c4.3.4 </a> </td>
+
+																   </tr>
+
+																		<tr>
+																	<td> <a href="/criteria/c4_4_1/adv-reprts">c4.4.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c4_4_2/adv-reprts">c4.4.2 </a> </td>
+
+
+															  </tbody>
+														  </table>
+													  </div>
+											</div>
+											<div class="tab-pane" id="solid-tab5">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c5_1_1/adv-reprts">c5.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c5_1_2/adv-reprts">c5.1.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c5_1_3/adv-reprts">c5.1.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3A/adv-reprts">c5.1.3A </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3B/adv-reprts">c5.1.3B </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3C/adv-reprts">c5.1.3C </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3D/adv-reprts">c5.1.3D </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3E/adv-reprts">c5.1.3E </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3F/adv-reprts">c5.1.3F </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3G/adv-reprts">c5.1.3G </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_3H/adv-reprts">c5.1.3H </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c5_1_4/adv-reprts">c5.1.4 </a> </td>
+
+																   </tr>
+																       <tr>
+																	<td> <a href="/criteria/c5_1_5/adv-reprts">c5.1.5 </a> </td>
+
+																   </tr>
+																       <tr>
+																	<td> <a href="/criteria/c5_1_6/adv-reprts">c5.1.6 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c5_2_1/adv-reprts">c5.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c5_2_2/adv-reprts">c5.2.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c5_2_3/adv-reprts">c5.2.3 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c5_3_1/adv-reprts">c5.3.1 </a> </td>
+
+																   </tr>
+																	<tr>
+																	<td> <a href="/criteria/c5_3_2/adv-reprts">c5.3.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c5_3_2A/adv-reprts">c5.3.2A </a> </td>
+
+																   </tr>
+																   		<tr>
+																	<td> <a href="/criteria/c5_3_2B/adv-reprts">c5.3.2B </a> </td>
+
+																   </tr>
+																	<tr>
+																	<td> <a href="/criteria/c5_3_3/adv-reprts">c5.3.3 </a> </td>
+
+																   </tr>
+
+																  <tr>
+																	<td> <a href="/criteria/c5_4_1A/adv-reprts">c5.4.1A </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c5_4_1B/adv-reprts">c5.4.1B </a> </td>
+
+																   </tr>
+																  <tr>
+																	<td> <a href="/criteria/c5_4_2/adv-reprts">c5.4.2 </a> </td>
+
+																   </tr>
+
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab6">
+												<div class="table-responsive col-md-6">
+												 <table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c6_1_1/adv-reprts">c6.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c6_1_2/adv-reprts">c6.1.2 </a> </td>
+
+																  </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c6_2_1/adv-reprts">c6.2.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c6_2_2/adv-reprts">c6.2.2 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c6_2_3/adv-reprts">c6.2.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c6_2_4/adv-reprts">c6.2.4 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c6_3_1/adv-reprts">c6.3.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c6_3_2/adv-reprts">c6.3.2 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c6_3_3/adv-reprts">c6.3.3 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c6_3_4/adv-reprts">c6.3.4 </a> </td>
+
+																   </tr>
+
+																   	<tr>
+																	<td> <a href="/criteria/c6_3_5/adv-reprts">c6.3.5 </a> </td>
+
+																   </tr>
+
+																		<tr>
+																	<td> <a href="/criteria/c6_4_1/adv-reprts">c6.4.1 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c6_4_2/adv-reprts">c6.4.2 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c6_4_3/adv-reprts">c6.4.3 </a> </td>
+
+																  </tr>
+
+																   <tr>
+																	<td> <a href="/criteria/c6_5_1/adv-reprts">c6.5.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c6_5_2/adv-reprts">c6.5.2 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c6_5_3/adv-reprts">c6.5.3 </a> </td>
+
+																  </tr>
+																   	   <tr>
+																	<td> <a href="/criteria/c6_5_4/adv-reprts">c6.5.4 </a> </td>
+
+																  </tr>
+																  	<tr>
+																	<td> <a href="/criteria/c6_5_5/adv-reprts">c6.5.5 </a> </td>
+
+																  </tr>
+
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+											<div class="tab-pane" id="solid-tab7">
+												<div class="table-responsive col-md-6">
+												<table class="table table-bordered">
+															  <thead>
+																   <th>Criterion</th>
+
+															  </thead>
+															  <tbody>
+																  <tr>
+																	<td> <a href="/criteria/c7_1_1/adv-reprts">c7.1.1 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c7_1_2/adv-reprts">c7.1.2 </a> </td>
+
+																  </tr>
+																     <tr>
+																	<td> <a href="/criteria/c7_1_2A/adv-reprts">c7.1.2A </a> </td>
+
+																  </tr>
+																     <tr>
+																	<td> <a href="/criteria/c7_1_2B/adv-reprts">c7.1.2B </a> </td>
+
+																  </tr>
+																     <tr>
+																	<td> <a href="/criteria/c7_1_2C/adv-reprts">c7.1.2C </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c7_1_3/adv-reprts">c7.1.3 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c7_1_4/adv-reprts">c7.1.4 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c7_1_5/adv-reprts">c7.1.5 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c7_1_6/adv-reprts">c7.1.6 </a> </td>
+
+																   </tr>
+																   	<tr>
+																	<td> <a href="/criteria/c7_1_7/adv-reprts">c7.1.7 </a> </td>
+
+																   </tr>
+																     <tr>
+																	<td> <a href="/criteria/c7_1_8/adv-reprts">c7.1.8 </a> </td>
+
+																   </tr>
+
+																	<tr>
+																	<td> <a href="/criteria/c7_1_9/adv-reprts">c7.1.9 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c7_1_10/adv-reprts">c7.1.10 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c7_1_11/adv-reprts">c7.1.11 </a> </td>
+
+																   </tr>
+
+																		<tr>
+																	<td> <a href="/criteria/c7_1_12/adv-reprts">c7.1.12 </a> </td>
+
+																   </tr>
+																		<tr>
+																	<td> <a href="/criteria/c7_1_13/adv-reprts">c7.1.13 </a> </td>
+
+																   </tr>
+																    <tr>
+																	<td> <a href="/criteria/c7_1_14/adv-reprts">c7.1.14 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c7_1_15/adv-reprts">c7.1.15 </a> </td>
+
+																  </tr>
+																   <tr>
+																	<td> <a href="/criteria/c7_1_16/adv-reprts">c7.1.16 </a> </td>
+
+																  </tr>
+																    <tr>
+																	<td> <a href="/criteria/c7_1_17/adv-reprts">c7.1.17 </a> </td>
+
+																   </tr>
+																   <tr>
+																	<td> <a href="/criteria/c7_1_18/adv-reprts">c7.1.18 </a> </td>
+																  </tr>
+
+																   <tr>
+																	<td> <a href="/criteria/c7_1_19/adv-reprts">c7.1.19 </a> </td>
+																  </tr>
+
+															     <tr>
+																	<td> <a href="/criteria/c7_2_1/adv-reprts">c7.2.1 </a> </td>
+																  </tr>
+
+																  <tr>
+																	<td> <a href="/criteria/c7_3_1/adv-reprts">c7.3.1 </a> </td>
+																  </tr>
+
+															  </tbody>
+														  </table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+                </div>
+
+<!-- End Main content-->
+{% endblock %}

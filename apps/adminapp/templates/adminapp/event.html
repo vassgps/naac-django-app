@@ -86,7 +86,7 @@
 													<a href="{{evt.files.url}}" target="_blank">  Click Here </a>
 													 {% else %} No Files {% endif %} </td>
 												<td style="width:7%;">  {% if evt.status %}
-													<button type="button" class="btn btn-primary btn-sm"> Done </button>
+													<button type="button" class="btn btn-outline-success btn-sm" disabled> Done </button>
 														{% else %}
 														  <form method="post" action="/adminapp/event/approve/{{evt.id}}">
 																{% csrf_token %}
@@ -101,7 +101,7 @@
 									{% endfor %}
 								</tbody>
 								 <tfoot>
-										<tr>
+										 <tr class="text-secondary">
 											<th>SL</th>
 											<th>Date</th>
 											<th>Title</th>

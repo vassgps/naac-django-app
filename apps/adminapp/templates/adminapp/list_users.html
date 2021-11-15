@@ -70,9 +70,9 @@
 									<td>{{user.department}}</td>
 									<td>{{user.designation}}</td>
 									<td>  {% if user.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										  <button type="button" class="btn btn-outline-success btn-sm" disabled> Active &nbsp; </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										   <button type="button" class="btn btn-outline-danger btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if user.status %}

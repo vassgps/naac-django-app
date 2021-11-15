@@ -19,7 +19,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 @method_decorator(staff_member_required, name='dispatch')
 class AllPrograms(View):
     def get(self, request):
-        programs = Program.objects.all()
+        programs = Program.objects.all().order_by('id')
         context = {'programs': programs}
         return render(request, "programs/programs.html", context)
 

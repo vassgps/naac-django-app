@@ -1,9 +1,6 @@
 {% extends 'adminapp/base.html' %} {% load static %} {% block title %} Admin APP - Blank details page{% endblock %}
 
 <!------ Include the above in your HEAD tag ---------->
-
-
-
 {% block body %}
 
 
@@ -15,9 +12,9 @@
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="page-title">List Departments Page</h3>
+                    <h3 class="page-title">List Departments</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Departments</a></li>
+                        <li class="breadcrumb-item"><a href="#">List All Departments</a></li>
                         <li class="breadcrumb-item active">Admin - Dept.</li>
                     </ul>
                 </div>
@@ -51,7 +48,7 @@
 					<div class="table-responsive">
 						<table class="datatable table table-stripped mb-0">
 							<thead>
-								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+								<tr>
 									<th>SL</th>
 									<th>Department</th>
 									<th>Code</th>
@@ -59,24 +56,26 @@
 									<th>Established On</th>
 									<th>Status</th>
 									<th>Change Status </th>
+									<th> Update </th>
 								</tr>
 							</thead>
 							<tbody>
 							{% for dept in departments %}
-								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+								<tr>
 									<td> {{forloop.counter}}  </td>
 									<td> {{dept.name}} </td>
 									<td>{{dept.code}}</td>
 									<td>{{dept.description}}</td>
 									<td>{{dept.established_at}}</td>
 									<td>  {% if dept.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										   <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Active </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										  <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if dept.status %}
-									 <td>  <form method="post" action="/programs/departments/disable/{{dept.id}}">
+									 <td>  <form method="post" action="/programs/departments/disable/{{dept.id}}"
+									 	   onSubmit="return confirm('Do you want to Disable ?')" >
 										 {% csrf_token %}
 										 <button type="submit" class="btn btn-danger btn-sm">Disable </button>  </form> </td>
 									{% else %}
@@ -85,6 +84,11 @@
 										 <button type="submit" class="btn btn-success btn-sm"> Activate </button>
 									 </form> </td>
 									{% endif %}
+									 <td>  <form method="get" action="/programs/departments/update/{{dept.id}}">
+										 {% csrf_token %}
+										 <button type="submit" class="btn btn-info btn-sm"> Update </button>
+
+									 </form> </td>
 								</tr>
 							{% endfor %}
 							</tbody>

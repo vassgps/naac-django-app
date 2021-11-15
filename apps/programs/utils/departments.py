@@ -16,7 +16,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 @method_decorator(staff_member_required, name='dispatch')
 class AllDepartment(View):
     def get(self, request):
-        departments = Departments.objects.all()
+        departments = Departments.objects.all().order_by('id')
         context = {'departments': departments}
         return render(request, "programs/departments.html", context)
 

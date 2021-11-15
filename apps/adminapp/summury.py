@@ -6,6 +6,7 @@ from django.utils.decorators import method_decorator
 from django.contrib.contenttypes.models import ContentType
 from django.apps import apps
 from .models import FinalCriteria, CriteriaManager
+from ..criterions.models import CriterionMaster
 
 # List All Criterion Names
 all_criterion = ["c1_1_1", "c1_1_2", "c1_1_3", "c1_2_1", "c1_2_2", "c1_3_1", "c1_3_2", "c1_3_3", "c1_3_4", "c1_4_1",
@@ -34,9 +35,8 @@ all_criterion = ["c1_1_1", "c1_1_2", "c1_1_3", "c1_2_1", "c1_2_2", "c1_3_1", "c1
                  "c7_1_10",
                  "c7_1_11", "c7_1_12", "c7_1_13", "c7_1_14", "c7_1_15", "c7_1_16", "c7_1_17", "c7_1_18", "c7_1_19",
                  "c7_1_2",
-                 "c7_1_2A", "c7_1_2B", "c7_1_2C", "c7_1_3", "c7_1_4", "c7_1_5", "c7_1_6", "c7_1_7", "c7_1_8", "c7_1_9",
-                 "c7_2_1",
-                 "c7_3_1"]
+                 "c7_1_2A", "c7_1_2B", "c7_1_2C", "c7_1_3", "c7_1_4", "c7_1_5", "c7_1_6", "c7_1_7A", "c7_1_7B",
+                 "c7_1_7C", "c7_1_7D", "c7_1_8", "c7_1_9","c7_2_1", "c7_3_1"]
 
 
 # Show total criterion entered by all for admin summary page
@@ -45,9 +45,8 @@ def summury(request):
     for obj in all_criterion:
         criterion = str(obj).lower()
         try:
-            cid = ContentType.objects.get(model=criterion)
-            model_class = cid.model_class()
-            count = model_class.objects.all().count()
+            count = CriterionMaster.objects.filter(criterion=criterion).count()
+            print(criterion, " : ", count)
         except:
             count = "x"
         obj_dict = {criterion: count}  # Create Temporary Dict

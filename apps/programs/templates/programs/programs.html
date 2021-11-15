@@ -12,9 +12,9 @@
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="page-title">List Programs Page</h3>
+                    <h3 class="page-title">List programs </h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Programs</a></li>
+                        <li class="breadcrumb-item"><a href="#">List All Programs</a></li>
                         <li class="breadcrumb-item active">Admin - Programs.</li>
                     </ul>
                 </div>
@@ -70,9 +70,9 @@
 									<td>{{prgm.description}}</td>
 									<td>{{prgm.established_at}}</td>
 									<td>  {% if prgm.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										  <button type="button" class="btn btn-outline-success btn-sm" disabled> Active &nbsp;  </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										<button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if prgm.status %}

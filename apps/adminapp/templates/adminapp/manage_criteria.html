@@ -8,18 +8,7 @@
 
 <div class="content container-fluid" xmlns="http://www.w3.org/1999/html">
 
-        <!-- Page Header -->
-        <div class="page-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="page-title">List all Criterions</h3>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Clubs</a></li>
-                        <li class="breadcrumb-item active">Admin - Criterions.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+		<br>
 	 </div>
 
       {% if messages %}
@@ -41,7 +30,7 @@
 					<p class="card-text">
 						This is the list of all Criterions (Both Active & Disabled)
 					</p>
-					 <a href="/adminapp/assign-new-criteria"> <button type="button" class="btn btn-success">Add Criteria</button> </a>
+<!--					 <a href="/adminapp/assign-new-criteria"> <button type="button" class="btn btn-success">Add Criteria</button> </a>-->
 				</div>
 <!--				 OLD Method - Disabled after JSOn Field Introduction-->
 <!--				<div class col-md4 style="padding: 20px; justify-content-center">-->
@@ -90,22 +79,22 @@
 									<td> {{forloop.counter}}  </td>
 									<td> {{obj.criteria}} </td>
 									<td class="text-success"> {% if obj.NAAC_COD %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 									<td class="text-primary"> {% if obj.DEPT_COD %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 									<td class="text-warning"> {% if obj.TEACHER %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 									<td class="text-info"> {% if obj.CLUB %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 									<td class="text-secondary"> {% if obj.OTHER %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 									<td class="text-dark"> {% if obj.STAFF %}
-										 YES
+										 Yes
 										 {% else %} - {% endif %} </td>
 
 									<td>  {% if obj.is_active %}

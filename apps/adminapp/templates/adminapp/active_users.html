@@ -17,7 +17,7 @@
                 <div class="col-sm-12">
                     <h3 class="page-title">List Users Page</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List Active Users</a></li>
+                        <li class="breadcrumb-item"><a href="#">List Active Users</a></li>
                         <li class="breadcrumb-item active">Admin - Users</li>
                     </ul>
                 </div>
@@ -69,17 +69,17 @@
 									<td>{{user.department}}</td>
 									<td>{{user.designation}}</td>
 									<td>  {% if user.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										 <button type="button" class="btn btn-outline-success btn-sm" disabled> Active &nbsp;  </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										 <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if user.status %}
-									 <td>  <form method="post" action="/adminapp/disable-user/{{user.id}}">
+									 <td>  <form method="post" action="/adminapp/disable-user/page/{{user.id}}">
 										 {% csrf_token %}
 										 <button type="submit" class="btn btn-danger btn-sm">Disable </button>  </form> </td>
 									{% else %}
-									 <td>  <form method="post" action="/adminapp/approve-user/{{user.id}}">
+									 <td>  <form method="post" action="/adminapp/approve-user/page/{{user.id}}">
 										 {% csrf_token %}
 										 <button type="submit" class="btn btn-success btn-sm"> Activate </button>
 									 </form> </td>

@@ -23,6 +23,10 @@ urlpatterns = [
     path('edit-user/<int:pk>', UserUpdateView.as_view(), name="edit-user"),
     path('delete-user/<int:pk>', deleteUser, name="delete-user"),
 
+    # For redirect to same page after approval or disable
+    path('approve-user/page/<int:id>', approveUserPage, name="approve-user-page"),
+    path('disable-user/page/<int:id>', disableUserPage, name="disable-user-page"),
+
     path('departments', AllDepartment.as_view(), name="departments"),
     path('programs', AllPrograms.as_view(), name="programs"),
     path('papers', AllPapers.as_view(), name="papers"),

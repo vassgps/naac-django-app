@@ -37,7 +37,7 @@ def approveUser(request, id):
         user.status = True
         user.save()
         messages.add_message(request, messages.SUCCESS, 'User Approved Successfully')
-        return redirect('adminapp:activeusers')
+        return redirect('adminapp:allusers')
     else:
         messages.add_message(request, messages.ERROR, 'Method NOT Alowed')
         return redirect('/adminapp/allusers/')
@@ -51,7 +51,7 @@ def disableUser(request, id):
         user.status = False
         user.save()
         messages.add_message(request, messages.ERROR, 'User Disabled Successfully')
-        return redirect('adminapp:pendingusers')
+        return redirect('adminapp:allusers')
     else:
         messages.add_message(request, messages.ERROR, 'Method NOT Alowed')
         return redirect('/adminapp/allusers/')
@@ -110,6 +110,35 @@ def deleteUser(request, id):
         user.save()
         messages.add_message(request, messages.ERROR, 'User Deleted Successfully')
         return redirect('adminapp:pendingusers')
+    else:
+        messages.add_message(request, messages.ERROR, 'Method NOT Alowed')
+        return redirect('/adminapp/allusers/')
+
+# Approve or Disable user and redirect to same page
+
+# Approve a User
+@login_required()
+def approveUserPage(request, id):
+    if request.method == 'POST':
+        user = User.objects.get(id=id)
+        user.status = True
+        user.save()
+        messages.add_message(request, messages.SUCCESS, 'User Approved Successfully')
+        return redirect('adminapp:pendingusers')
+    else:
+        messages.add_message(request, messages.ERROR, 'Method NOT Alowed')
+        return redirect('/adminapp/allusers/')
+
+
+# Disable a User
+@login_required()
+def disableUserPage(request, id):
+    if request.method == 'POST':
+        user = User.objects.get(id=id)
+        user.status = False
+        user.save()
+        messages.add_message(request, messages.ERROR, 'User Disabled Successfully')
+        return redirect('adminapp:activeusers')
     else:
         messages.add_message(request, messages.ERROR, 'Method NOT Alowed')
         return redirect('/adminapp/allusers/')

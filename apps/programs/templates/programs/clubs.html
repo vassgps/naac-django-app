@@ -8,19 +8,6 @@
 
 <div class="content container-fluid" xmlns="http://www.w3.org/1999/html">
 
-        <!-- Page Header -->
-        <div class="page-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="page-title">List Clubs and Forums Page</h3>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Clubs</a></li>
-                        <li class="breadcrumb-item active">Admin - Clubs.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	 </div>
 
       {% if messages %}
         <div class="alert  alert-light alert-dismissible fade show" role="alert">
@@ -45,23 +32,28 @@
 				</div>
 				<div class col-md4 style="padding: 20px; justify-content-center">
 
-   					 <form method="post" action="/programs/assign-club"  enctype="multipart/form-data">
-                      {% csrf_token %}
-                        <label for="clubs">Choose a club:</label>
-                          <select name="clubs" id="clubs">
-                            {% for club in clubs %}
-                            <option value="{{club.pk}}"> {{club.name}} </option>
-                             {% endfor %}
-                          </select>
 
-						 <label for="users">Choose a User:</label>
-                          <select name="users" id="users">
-                            {% for user in users %}
-                            <option value="{{user.pk}}">{{user.username}}</option>
-                             {% endfor %}
-                          </select>
-						  <button type="submit" class="btn btn-primary">Assign</button>
-                    </form>
+						 <form class="form-inline" method="post" action="/programs/assign-club"  enctype="multipart/form-data">
+						  {% csrf_token %}
+
+									<label for="clubs" > Select Club &nbsp;</label>
+									  <select name="clubs" id="clubs" class="form-control" style="width=40px !important;">
+										{% for club in clubs %}
+										<option value="{{club.pk}}"> {{club.name}} </option>
+										 {% endfor %}
+									  </select>
+
+
+								 <label for="users" > &nbsp; Select User  &nbsp; </label>
+								  <select name="users" id="users" class="form-control">
+									{% for user in users %}
+									<option value="{{user.pk}}">{{user.username}}</option>
+									 {% endfor %}
+								  </select>
+										&nbsp;
+							  <button type="submit" class="btn btn-success">Assign</button>
+						</form>
+
 				</div>
 
 				<div class="card-body">
@@ -90,17 +82,17 @@
 									<td>{{club.description}}</td>
 									<td>{{club.established_at}}</td>
 										<td>{% for i in club.user.all %}
-										{{i.username}} </br>
+										{{i.username}} <br>
 									    {% endfor %}
-									</td>
+										</td>
 									<td>  {% if club.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										 <button type="button" class="btn btn-outline-success btn-sm" disabled> Active &nbsp;  </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										  <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if club.status %}
-									 <td>  <form method="post" action="/programs/club/disable/{{club.id}}" 
+									 <td>  <form method="post" action="/programs/club/disable/{{club.id}}"
 									 	   onSubmit="return confirm('Do you want to Disable ?')" >
 										 {% csrf_token %}
 										 <button type="submit" class="btn btn-danger btn-sm">Disable </button>  </form> </td>
@@ -112,7 +104,7 @@
 									{% endif %}
 									 <td>  <form method="get" action="/programs/club/update/{{club.id}}">
 										 <button type="submit" class="btn btn-info btn-sm"> Update </button>
-										
+
 									 </form> </td>
 								</tr>
 							{% endfor %}

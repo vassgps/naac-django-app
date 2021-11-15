@@ -19,7 +19,7 @@ User = get_user_model()
 @method_decorator(staff_member_required, name='dispatch')
 class AllClub(View):
     def get(self, request):
-        clubs = Clubs.objects.all()
+        clubs = Clubs.objects.all().order_by('id')
         users = User.objects.filter(status=True)
         context = {'clubs': clubs, 'users': users}
         return render(request, "programs/clubs.html", context)

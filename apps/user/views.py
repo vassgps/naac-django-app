@@ -30,17 +30,18 @@ def home(request):
     try:
         total_criterions = CriteriaManager.objects.filter(is_active=True, is_enabled=True).count()
         assigned_criterion = getUserCriteria(user)
-        data_input = userSummury(user)
-        user_input = data_input['enterd_count']
-        pending_input = data_input['pending_count']
-    except:
+        # data_input = userSummury(user)
+        user_input = 0  # data_input['enterd_count']
+        pending_input = 0  # data_input['pending_count']
+    except Exception as e:
+        print(e)
         total_criterions = 0
         assigned_criterion = 0
         data_input = 0
         user_input = 0
         pending_input = 0
     context = {'user': user, 'total_criterions': total_criterions, 'assigned_criterion': assigned_criterion,
-               'user_input':user_input, 'pending_input':pending_input}
+               'user_input': user_input, 'pending_input': pending_input}
     return render(request, "user/home.html", context)
 
 
@@ -87,7 +88,7 @@ class UpdateUser(LoginRequiredMixin, View):
         if form.is_valid():
             current_user.save()  # Save the Updated User Details
             messages.add_message(request, messages.SUCCESS, 'User Profile Updated Successfully')
-            return redirect('user:home')
+            return redirect('user:update')
         else:
             return render(request, "user/update_profile.html", {'form': form})
 
@@ -102,7 +103,7 @@ class ChangePassword(LoginRequiredMixin, View):
             user = form.save()
             update_session_auth_hash(request, user)  # Important!
             messages.success(request, 'Your password was successfully updated!')
-            return redirect('user:home')
+            return redirect('user:change-password')
         else:
             return render(request, 'user/update_password.html', {'form': form})
 

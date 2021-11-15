@@ -19,15 +19,7 @@
 
         <!-- Page Header -->
         <div class="page-header">
-<!--            <div class="row">-->
-<!--                <div class="col-sm-12">-->
-<!--                    <h3 class="page-title">List Events</h3>-->
-<!--                    <ul class="breadcrumb">-->
-<!--                        <li class="breadcrumb-item"><a href="index.html">List All Events</a></li>-->
-<!--                        <li class="breadcrumb-item active">Admin - Events.</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
+
         </div>
 	 </div>
 
@@ -61,11 +53,10 @@
 									<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
                                         <th>SL</th>
                                         <th>Name</th>
+                                        <th>Code</th>
                                         <th>Program</th>
                                         <th>Department</th>
-                                        <th>Code</th>
-                                        <th>Description</th>
-                                        <th>Established On</th>
+
                                         <th>Status</th>
                                         <th>Change Status </th>
                                         <th> Update </th>
@@ -76,15 +67,13 @@
                                         <tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
                                             <td> {{forloop.counter}}  </td>
                                             <td> {{sbjt.name}} </td>
+                                            <td>{{sbjt.code}}</td>
                                             <td> {{sbjt.program}} </td>
                                             <td> {{sbjt.department}} </td>
-                                            <td>{{sbjt.code}}</td>
-                                            <td>{{sbjt.description}}</td>
-                                            <td>{{sbjt.established_at}}</td>
                                             <td>  {% if sbjt.status %}
-                                                <button type="button" class="btn btn-primary btn-sm">Active</button>
+                                                  <button type="button" class="btn btn-outline-success btn-sm" disabled> Active &nbsp;  </button>
                                                     {% else %}
-                                                <button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+                                                  <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
                                                     {% endif %}
                                             </td>
                                              {% if sbjt.status %}
@@ -105,14 +94,12 @@
                                     {% endfor %}
 								</tbody>
 								 <tfoot>
-						            <tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
+						             <tr class="text-secondary">
                                         <th>SL</th>
                                         <th>Name</th>
+                                        <th>Code</th>
                                         <th>Program</th>
                                         <th>Department</th>
-                                        <th>Code</th>
-                                        <th>Description</th>
-                                        <th>Established On</th>
                                         <th>Status</th>
                                         <th>Change Status </th>
                                         <th> Update </th>

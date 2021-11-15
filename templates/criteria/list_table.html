@@ -37,10 +37,10 @@
                                     <th>SL</th>
                                     <th>Date</th>
                                     <th>Status</th>
-                                    <th>View Data</th>
                                     <th>User</th>
                                     <th>Created on</th>
                                     <th>ID </th>
+                                    <th>View Data</th>
                                     <th>_</th>
                                 </tr>
 
@@ -57,11 +57,13 @@
                                     <td> {{forloop.counter}} </td>
                                     <td> {{ obj.date }} </td>
                                     <td> {{ obj.status }} </td>
-                                    <td><a href="/criteria/detailed-view/{{obj.criterion}}/{{obj.id}}"target="_blank">
-                                     	<button type="submit" class="btn btn-info btn-sm"> View Data </button> </a> </td>
-                                    <td> {{ obj.user }} </td>
+                                     <td> {{ obj.user }} </td>
                                     <td> {{ obj.created_at }} </td>
                                     <td> {{ obj.id }} </td>
+                                    <td><a href="/criteria/detailed-view/{{obj.criterion}}/{{obj.id}}"target="_blank">
+                                     	<button type="submit" class="btn btn-info btn-sm"> View Data </button> </a> </td>
+                                   
+
                                     <td style="display:none;">
                                         {{ obj.department }} -
                                         {{ obj.program }} -
@@ -70,14 +72,14 @@
                              {% endfor %}
                             </tbody>
                             <tfoot>
-                                <tr>
+                                <tr class="text-secondary">
                                     <th>SL</th>
                                     <th>Date</th>
                                     <th>Status</th>
-                                    <th>View Data</th>
                                     <th>User</th>
                                     <th>Created on</th>
                                     <th>ID </th>
+                                    <th>View Data</th>
                                     <th>_</th>
                                 </tr>
                             </tfoot>

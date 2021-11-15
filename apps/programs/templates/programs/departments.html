@@ -12,9 +12,9 @@
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="page-title">List Departments Page</h3>
+                    <h3 class="page-title">List Departments</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Departments</a></li>
+                        <li class="breadcrumb-item"><a href="#">List All Departments</a></li>
                         <li class="breadcrumb-item active">Admin - Dept.</li>
                     </ul>
                 </div>
@@ -68,9 +68,9 @@
 									<td>{{dept.description}}</td>
 									<td>{{dept.established_at}}</td>
 									<td>  {% if dept.status %}
-										<button type="button" class="btn btn-primary btn-sm">Active</button>
+										   <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Active </button>
 											{% else %}
-										<button type="button" class="btn btn-secondary btn-sm">Inactive</button>
+										  <button type="button" class="btn btn-outline-secondary btn-sm" disabled> Inactive </button>
 											{% endif %}
 									</td>
 									 {% if dept.status %}
@@ -84,7 +84,7 @@
 										 <button type="submit" class="btn btn-success btn-sm"> Activate </button>
 									 </form> </td>
 									{% endif %}
-									 <td>  <form method="post" action="/programs/departments/update/{{dept.id}}">
+									 <td>  <form method="get" action="/programs/departments/update/{{dept.id}}">
 										 {% csrf_token %}
 										 <button type="submit" class="btn btn-info btn-sm"> Update </button>
 										

@@ -16,12 +16,12 @@ class User(AbstractUser):
     phone_number = models.CharField(max_length=15, null=True)
     designation = models.CharField(max_length=100, null=True, blank=True)
     department = models.ForeignKey('programs.Departments', null=True, on_delete=models.DO_NOTHING)
-    user_scope = models.CharField(max_length=20, null=True, choices=AllUserScope.USER_SCOPES, default="TEACHER")
+    user_scope = models.CharField(max_length=20, null=True, choices=AllUserScope.USER_SCOPES, default="CLUB")
     clubs = models.ForeignKey('programs.Clubs', related_name="user_clubs", null=True, blank=True,
                               on_delete=models.DO_NOTHING)
     is_active = models.BooleanField(default=True)
     is_verified = models.BooleanField(default=False)
-    is_teacher = models.BooleanField(default=False)
+    is_teacher = models.BooleanField(default=False, verbose_name="Grand Permission to perform as a Teacher")
     status = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 

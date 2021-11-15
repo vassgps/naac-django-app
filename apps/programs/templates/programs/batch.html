@@ -8,19 +8,6 @@
 
 <div class="content container-fluid" xmlns="http://www.w3.org/1999/html">
 
-        <!-- Page Header -->
-        <div class="page-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="page-title">List Batch</h3>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">List All Batches</a></li>
-                        <li class="breadcrumb-item active">Admin - Batches.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	 </div>
 
       {% if messages %}
         <div class="alert  alert-light alert-dismissible fade show" role="alert">
@@ -52,8 +39,6 @@
 									<th>SL</th>
 									<th>Batch</th>
 									<th>Code</th>
-									<th>Description</th>
-									<th>Established On</th>
 									<th>Status</th>
 									<th>Change Status </th>
 									<th>Update </th>
@@ -64,9 +49,7 @@
 								<tr style="border-left: 2px solid #dee2e6; border-right: 2px solid #dee2e6;">
 									<td> {{forloop.counter}}  </td>
 									<td> {{bth.name}} </td>
-									<td>{{bth.code}}</td>
-									<td>{{bth.description}}</td>
-									<td>{{bth.established_at}}</td>
+									<td>{{bth.batch_no }}</td>
 									<td>  {% if bth.status %}
 										<button type="button" class="btn btn-primary btn-sm">Active</button>
 											{% else %}
